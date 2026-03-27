@@ -54,8 +54,8 @@ BlockATM 是全球首个基于区块链智能合约技术的去中心化支付�
 |------|------|------|
 | V5.8.0 | 2026-XX-XX | 统一支付方式，支持授权付币 |
 | V2.3.0 | 2026-01-13 | 上线授权管理模式 |
-| V2.2.0 | 2025-XX-XX | 支持 Ethereum/Tron 提现 |
-| V2.1.0 | 2025-XX-XX | 初始版本 |
+| V2.2.0 | 2025-10-15 | 支持 Ethereum/Tron 提现 |
+| V2.1.0 | 2025-06-10 | 初始版本 |
 
 [查看完整更新日志 →](changelog/README.md)
 
@@ -63,6 +63,7 @@ BlockATM 是全球首个基于区块链智能合约技术的去中心化支付�
 
 ## 需要帮助？
 
-- 📧 技术支持：support@blockatm.net
+- 💬 Telegram：Passto_john
+- 📧 邮箱：john.feng@chixi88.com
 - 📖 [常见问题](faq/README.md)
 - 🔧 [集成指南](integration/guides/collect-guide.md)

@@ -4,29 +4,11 @@
 
 * [BlockATM 是什么](getting-started/what-is-blockatm.md)
 * [核心概念](getting-started/core-concepts.md)
-* [支持的网络](getting-started/supported-networks.md)
 * [快速开始](getting-started/quickstart.md)
-
-## 👛 钱包教程
-
-* [钱包概述](wallets/README.md)
-* **MetaMask**
-  * [MetaMask 介绍](wallets/metamask/README.md)
-  * [创建 MetaMask 钱包](wallets/metamask/create-wallet.md)
-  * [连接 BlockATM](wallets/metamask/connect-blockatm.md)
-  * [硬件钱包集成](wallets/metamask/hardware-wallet.md)
-* **TronLink**
-  * [TronLink 介绍](wallets/tronlink/README.md)
-  * [创建 TronLink 钱包](wallets/tronlink/create-wallet.md)
-  * [连接 BlockATM](wallets/tronlink/connect-blockatm.md)
-* **WalletConnect**
-  * [WalletConnect 使用指南](wallets/walletconnect/README.md)
-
-***
 
 ## 💰 产品
 
-### 收币 (Safepay)
+### 收币
 
 * [收币概述](products/safepay/README.md)
 * [工作原理](products/safepay/how-it-works.md)
@@ -35,7 +17,7 @@
 
 ***
 
-### 付币 (Batch Payout)
+### 付币
 
 * [付币概述](products/batch-payout/README.md)
 * [工作原理](products/batch-payout/how-it-works.md)
@@ -46,16 +28,28 @@
 
 ***
 
-## 🔗 集成方式
+## 🔗 集成
 
-### Widget SDK（最快）
+### 支持的网络
+
+* [概述](getting-started/supported-networks.md)
+* **钱包教程**
+  * [MetaMask](getting-started/wallets/metamask/README.md)
+  * [TronLink](getting-started/wallets/tronlink/README.md)
+  * [WalletConnect](getting-started/wallets/walletconnect/README.md)
+
+***
+
+### Widget SDK
 
 * [概述](integration/widget-sdk/README.md)
 * [三步集成](integration/widget-sdk/integration.md)
 * [参数说明](integration/widget-sdk/parameters.md)
 * [URL 签名](integration/widget-sdk/url-signing.md)
 
-### Open API（最全）
+***
+
+### Open API
 
 * [概述](integration/open-api/README.md)
 * [签名认证](integration/open-api/authentication.md)
@@ -63,27 +57,24 @@
 * [限流规则](integration/open-api/rate-limit.md)
 * [错误码](integration/open-api/error-codes.md)
 * [配置 API](integration/open-api/config-api.md)
-* [收币 API](integration/open-api/payment-api.md)
+* [收款 API](integration/open-api/payment-api.md)
 * [付币 API](integration/open-api/payout-api.md)
 
-### 代码示例
-
-* [React 示例](integration/examples/react-example.md)
-* [Vue 示例](integration/examples/vue-example.md)
-* [Node.js 示例](integration/examples/nodejs-example.md)
-* [Java 示例](integration/examples/java-example.md)
+***
 
 ### Webhook
 
 * [概述](integration/webhooks/README.md)
-* [收币事件](integration/webhooks/payment-webhook.md)
+* [收款事件](integration/webhooks/payment-webhook.md)
 * [付币事件](integration/webhooks/payout-webhook.md)
 * [签名验证](integration/webhooks/verification.md)
 
+***
+
 ### 集成指南
 
-* [收币集成](integration/guides/collect-guide.md)
-* [收币支付流程](integration/guides/payment-flow.md)
+* [收款集成](integration/guides/collect-guide.md)
+* [收款支付流程](integration/guides/payment-flow.md)
 * [异常订单处理](integration/guides/exception-handling.md)
 * [付币集成](integration/guides/payout-guide.md)
 
@@ -93,7 +84,7 @@
 
 * [常见问题首页](faq/README.md)
 * [入门问题](faq/getting-started.md)
-* [收币问题](faq/collect.md)
+* [收款问题](faq/collect.md)
 * [付币问题](faq/payout.md)
 * [技术问题](faq/technical.md)
 

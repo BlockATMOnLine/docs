@@ -28,5 +28,7 @@
 ## 快速搜索
 
 {% hint style="info" %}
-**没找到答案？** 联系技术支持：support@blockatm.net
+**没找到答案？** 
+- 💬 Telegram：Passto_john
+- 📧 邮箱：john.feng@chixi88.com
 {% endhint %}

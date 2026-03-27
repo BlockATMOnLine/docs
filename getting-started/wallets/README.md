@@ -44,7 +44,7 @@ BlockATM 支持多种加密货币钱包，您可以根据业务需求选择合�
 - [创建 TronLink 钱包](tronlink/create-wallet.md)
 
 ### 2. 获取测试币
-- [获取测试币指南](../getting-started/supported-networks.md)
+- [获取测试币指南](../supported-networks.md)
 
 ### 3. 连接 BlockATM
 - [MetaMask 连接 BlockATM](metamask/connect-blockatm.md)
@@ -64,4 +64,5 @@ BlockATM 支持多种加密货币钱包，您可以根据业务需求选择合�
 ## 需要帮助？
 
 - 📖 [入门问题](../faq/getting-started.md)
-- 📧 技术支持：support@blockatm.net
+- 💬 Telegram：Passto_john
+- 📧 邮箱：john.feng@chixi88.com

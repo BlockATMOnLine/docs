@@ -348,7 +348,8 @@ if (webhookFailures > 5) {
 #### 3. 联系 BlockATM
 
 ```
-邮件：support@blockatm.net
+Telegram：Passto_john
+邮箱：john.feng@chixi88.com
 主题：【紧急】安全事件报告 - {商户 ID}
 
 内容：

@@ -65,8 +65,8 @@ BlockATM 支持以下钱包：
 
 | 方式 | 信息 |
 |------|------|
-| 邮箱 | support@blockatm.net |
-| 管理后台 | 提交工单 |
+| Telegram | Passto_john |
+| 邮箱 | john.feng@chixi88.com |
 
 ## 有演示环境吗？
 

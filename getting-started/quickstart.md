@@ -364,9 +364,9 @@ const API_KEY = 'pck_xxxxxx';    // 替换为您的 API Key
 
 ## 需要帮助？
 
-- 📧 技术支持：support@blockatm.net
+- 💬 Telegram：Passto_john
+- 📧 邮箱：john.feng@chixi88.com
 - 📖 [常见问题](../faq/README.md)
-- 💬 Telegram 社群（如有）
 
 {% hint style="success" %}
 **恭喜！** 您已完成 BlockATM 的首次集成。继续探索更多功能吧！
