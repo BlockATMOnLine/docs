@@ -1,112 +1,117 @@
-# Table of contents
+# 目录
 
-## 📖 Readme
+## 🟢 新手入门
 
-* [BlockATM Introduction](README.md)
-* [Core Advantage](readme/publish-your-docs.md)
+* [BlockATM 是什么](getting-started/what-is-blockatm.md)
+* [核心概念](getting-started/core-concepts.md)
+* [支持的网络](getting-started/supported-networks.md)
+* [快速开始](getting-started/quickstart.md)
 
-***
+## 👛 钱包教程
 
-* [Route Map](lu-xian-tu.md)
-
-## 👨‍💻 Business Description
-
-* [Safely Collection](business-description/safepay/README.md)
-  * [Operation Process](business-description/safepay/yun-zuo-liu-cheng.md)
-  * [Collection Contract](business-description/safepay/shou-bi-zhi-neng-he-yue.md)
-  * [Fee](business-description/safepay/fu-wu-fei-yong.md)
-
-***
-
-* [Batch Payout](batchwithdraw/README.md)
-  * [Operation Process](batchwithdraw/yun-zuo-liu-cheng.md)
-  * [Payout Contract](batchwithdraw/fu-bi-zhi-neng-he-yue.md)
-  * [Fee](batchwithdraw/fu-wu-fei-yong.md)
-
-## 🌐 Network | Token | Wallet
-
-* [Network and Token](network-or-token-or-wallet/networkandtokens/README.md)
-  * [Get Test Assets](network-or-token-or-wallet/networkandtokens/huo-qu-ce-shi-bi.md)
-* [Supported Wallets](network-or-token-or-wallet/wallets/README.md)
-  * [MetaMask](network-or-token-or-wallet/wallets/metamask/README.md)
-    * [How to create a MetaMask wallet](network-or-token-or-wallet/wallets/metamask/ru-he-chuang-jian-metamask-qian-bao.md)
-    * [How to connect MetaMask wallet](network-or-token-or-wallet/wallets/metamask/ru-he-lian-jie-metamask-qian-bao.md)
-    * [将冷钱包连接到 MetaMask](network-or-token-or-wallet/wallets/metamask/jiang-leng-qian-bao-lian-jie-dao-metamask/README.md)
-      * [使用 Ledger 设置 MetaMask 扩展](network-or-token-or-wallet/wallets/metamask/jiang-leng-qian-bao-lian-jie-dao-metamask/shi-yong-ledger-she-zhi-metamask-kuo-zhan.md)
-      * [使用 Trezor 设置 MetaMask 扩展](network-or-token-or-wallet/wallets/metamask/jiang-leng-qian-bao-lian-jie-dao-metamask/shi-yong-trezor-she-zhi-metamask-kuo-zhan.md)
-      * [使用 AirGap Vault 设置 MetaMask 扩展](network-or-token-or-wallet/wallets/metamask/jiang-leng-qian-bao-lian-jie-dao-metamask/shi-yong-airgap-vault-she-zhi-metamask-kuo-zhan.md)
-      * [使用 CoolWallet Pro 设置 MetaMask 扩展](network-or-token-or-wallet/wallets/metamask/jiang-leng-qian-bao-lian-jie-dao-metamask/shi-yong-coolwallet-pro-she-zhi-metamask-kuo-zhan.md)
-      * [使用 Lattice1 设置 MetaMask 扩展](network-or-token-or-wallet/wallets/metamask/jiang-leng-qian-bao-lian-jie-dao-metamask/shi-yong-lattice1-she-zhi-metamask-kuo-zhan.md)
-      * [使用 OneKey 设置 MetaMask 扩展](network-or-token-or-wallet/wallets/metamask/jiang-leng-qian-bao-lian-jie-dao-metamask/shi-yong-onekey-she-zhi-metamask-kuo-zhan.md)
-      * [使用 D'Cent 设置 MetaMask 扩展](network-or-token-or-wallet/wallets/metamask/jiang-leng-qian-bao-lian-jie-dao-metamask/shi-yong-dcent-she-zhi-metamask-kuo-zhan.md)
-      * [使用 Keystone 设置 MetaMask 扩展](network-or-token-or-wallet/wallets/metamask/jiang-leng-qian-bao-lian-jie-dao-metamask/shi-yong-keystone-she-zhi-metamask-kuo-zhan.md)
-  * [TronLink](network-or-token-or-wallet/wallets/tronlink/README.md)
-    * [How to create a TronLink wallet](network-or-token-or-wallet/wallets/tronlink/ru-he-chuang-jian-tronlink-qian-bao.md)
-    * [How to connect TronLink wallet](network-or-token-or-wallet/wallets/tronlink/ru-he-lian-jie-tronlink-qian-bao.md)
-  * [WalletConnect](network-or-token-or-wallet/wallets/walletconnect/README.md)
-    * [How to use WalletConnect to connect a wallet](network-or-token-or-wallet/wallets/walletconnect/ru-he-shi-yong-walletconnect-lian-jie-qian-bao.md)
-
-## 🧩 Integration Guide
-
-* [Quick Start](integration-guide/quickstart/README.md)
-  * [Connect Wallet](integration-guide/quickstart/lian-jie-qian-bao.md)
-  * [Start Collection](integration-guide/quickstart/startpay/README.md)
-    * [Create Collection Contract](integration-guide/quickstart/startpay/chuang-jian-shou-bi-zhi-neng-he-yue.md)
-    * [Link ERC20 and TRC20 wallets](integration-guide/quickstart/startpay/guan-lian-erc20-he-trc20-qian-bao.md)
-    * [Create Cashier Desk](integration-guide/quickstart/startpay/chuang-jian-shou-yin-tai.md)
-    * [Integrate Cashier Desk](integration-guide/quickstart/startpay/dui-jie-shou-yin-tai.md)
-    * [Collection](integration-guide/quickstart/startpay/shou-bi.md)
-    * [Handling of Abnormal Orders](integration-guide/quickstart/startpay/yi-chang-ding-dan-chu-li.md)
-    * [Withdraw](integration-guide/quickstart/startpay/ti-bi.md)
-  * [Start Payout](integration-guide/quickstart/startpayout/README.md)
-    * [Create Payout Contract](integration-guide/quickstart/startpayout/chuang-jian-fu-bi-zhi-neng-he-yue.md)
-    * [Integrate the Payout Contract](integration-guide/quickstart/startpayout/dui-jie-fu-bi-zhi-neng-he-yue.md)
-    * [Deposit](integration-guide/quickstart/startpayout/chong-bi.md)
-    * [Upload and confirm the Payout order](integration-guide/quickstart/startpayout/shang-chuan-bing-que-ren-fu-bi-ding-dan.md)
-  * [Permission Description](integration-guide/quickstart/quan-xian-shuo-ming.md)
+* [钱包概述](wallets/README.md)
+* **MetaMask**
+  * [MetaMask 介绍](wallets/metamask/README.md)
+  * [创建 MetaMask 钱包](wallets/metamask/create-wallet.md)
+  * [连接 BlockATM](wallets/metamask/connect-blockatm.md)
+  * [硬件钱包集成](wallets/metamask/hardware-wallet.md)
+* **TronLink**
+  * [TronLink 介绍](wallets/tronlink/README.md)
+  * [创建 TronLink 钱包](wallets/tronlink/create-wallet.md)
+  * [连接 BlockATM](wallets/tronlink/connect-blockatm.md)
+* **WalletConnect**
+  * [WalletConnect 使用指南](wallets/walletconnect/README.md)
 
 ***
 
-* [Integrate Cashier](integrationcashier/README.md)
-  * [Widget SDK](integrationcashier/widget-sdk.md)
-  * [Widget Params](integrationcashier/widget-can-shu.md)
-  * [Url Signing](integrationcashier/url-signing.md)
-* [Webhook](overview/README.md)
-  * [Overview](overview/gai-lan.md)
-  * [Collection  Params](overview/paymentevent.md)
-  * [Payout Params](overview/payoutevent.md)
-  * [Signing](overview/signing.md)
-* [Open Api](apis/README.md)
-  * [Access Instructions](apis/openapi/README.md)
-    * [Request](apis/openapi/request.md)
-    * [Request Signing](apis/openapi/request-signing.md)
-    * [Request Limit](apis/openapi/request-limit.md)
-    * [Error Code](apis/openapi/error-code.md)
-  * [Config Api](apis/public-data/README.md)
-    * [Network List](apis/public-data/page-2.md)
-    * [Token List](apis/public-data/coin-list.md)
-  * [Collection Api](apis/payment-data/README.md)
-    * [Query Cashier Info](apis/payment-data/cashier-info.md)
-    * [Collection Order List](apis/payment-data/query-payment-order.md)
-    * [Collection Order Detail](apis/payment-data/payment-order-detail.md)
-  * [Payout Api](apis/payout-data/README.md)
-    * [Create Payout Order](apis/payout-data/create-payout-order.md)
-    * [Query Payout Order](apis/payout-data/query-payout-order.md)
+## 💰 产品
 
-## 📅 Update Logs
+### 收币 (Safepay)
 
-* [V2.0.0](update-logs/geng-xin-ri-zhi.md)
-* [V2.1.0](update-logs/v2.1.0.md)
-* [V2.2.0](update-logs/v2.2.0/README.md)
-  * [Withdraw from  Ethereum](update-logs/v2.2.0/withdraw-from-ethereum.md)
-  * [Withdraw from Tron](update-logs/v2.2.0/withdraw-from-tron.md)
-* [V2.3.0](update-logs/v2.3.0.md)
+* [收币概述](products/safepay/README.md)
+* [工作原理](products/safepay/how-it-works.md)
+* [合约接口](products/safepay/contract.md)
+* [费用说明](products/safepay/fees.md)
 
-## Basics
+***
 
-* [Editor](basics/editor.md)
-* [Markdown](basics/markdown.md)
-* [Images & media](basics/images-and-media.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [OpenAPI](basics/openapi.md)
-* [Integrations](basics/integrations.md)
+### 付币 (Batch Payout)
+
+* [付币概述](products/batch-payout/README.md)
+* [工作原理](products/batch-payout/how-it-works.md)
+* [余额模式](products/batch-payout/balance-mode.md)
+* [授权模式](products/batch-payout/allowance-mode.md)
+* [合约接口](products/batch-payout/contract.md)
+* [费用说明](products/batch-payout/fees.md)
+
+***
+
+## 🔗 集成方式
+
+### Widget SDK（最快）
+
+* [概述](integration/widget-sdk/README.md)
+* [三步集成](integration/widget-sdk/integration.md)
+* [参数说明](integration/widget-sdk/parameters.md)
+* [URL 签名](integration/widget-sdk/url-signing.md)
+
+### Open API（最全）
+
+* [概述](integration/open-api/README.md)
+* [签名认证](integration/open-api/authentication.md)
+* [请求格式](integration/open-api/request-format.md)
+* [限流规则](integration/open-api/rate-limit.md)
+* [错误码](integration/open-api/error-codes.md)
+* [配置 API](integration/open-api/config-api.md)
+* [收币 API](integration/open-api/payment-api.md)
+* [付币 API](integration/open-api/payout-api.md)
+
+### 代码示例
+
+* [React 示例](integration/examples/react-example.md)
+* [Vue 示例](integration/examples/vue-example.md)
+* [Node.js 示例](integration/examples/nodejs-example.md)
+* [Java 示例](integration/examples/java-example.md)
+
+### Webhook
+
+* [概述](integration/webhooks/README.md)
+* [收币事件](integration/webhooks/payment-webhook.md)
+* [付币事件](integration/webhooks/payout-webhook.md)
+* [签名验证](integration/webhooks/verification.md)
+
+### 集成指南
+
+* [收币集成](integration/guides/collect-guide.md)
+* [收币支付流程](integration/guides/payment-flow.md)
+* [异常订单处理](integration/guides/exception-handling.md)
+* [付币集成](integration/guides/payout-guide.md)
+
+***
+
+## ❓ 常见问题
+
+* [常见问题首页](faq/README.md)
+* [入门问题](faq/getting-started.md)
+* [收币问题](faq/collect.md)
+* [付币问题](faq/payout.md)
+* [技术问题](faq/technical.md)
+
+***
+
+## 🔒 安全
+
+* [合约审计](security/audit-report.md)
+* [自托管说明](security/self-custody.md)
+* [安全最佳实践](security/best-practices.md)
+* [漏洞披露政策](security/vulnerability-report.md)
+
+***
+
+## 📝 更新日志
+
+* [更新日志索引](changelog/README.md)
+* [V2.1.0](changelog/v2.1.0.md)
+* [V2.2.0](changelog/v2.2.0.md)
+* [V2.3.0](changelog/v2.3.0.md)
+* [V5.8.0](changelog/v5.8.0.md)

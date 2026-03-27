@@ -1,33 +1,68 @@
-# BlockATM Introduction
+# BlockATM 开发者文档
 
-### Introduction
+BlockATM 是全球首个基于区块链智能合约技术的去中心化支付协议，为企业提供安全、自托管的加密货币支付解决方案。
 
-BlcokATM is the world's first decentralized payment protocol, built on blockchain smart contract technology to create a payment solution that does not involve centralized institutions and is not controlled by them. It changes the traditional payment industry's asset custody and control, allowing businesses to fully control their assets, ensuring 100% security.
-
-{% hint style="info" %}
-### What is decentralization?
-
-Decentralization refers to the process or design concept of dispersing power, control, or functions from a single central authority to multiple independent individuals, nodes, or entities. In the context of technology and blockchain, decentralization is often associated with distributed networks aimed at eliminating reliance on intermediaries or central institutions, enhancing system transparency, security, and resistance to censorship.\
-The main difference between decentralized payment gateways and centralized payment gateways lies in the fact that funds are held in smart contracts on the blockchain rather than being held by centralized institutions. Therefore, fund withdrawals and transfers have no limits on amount or time restrictions and do not require permission.
-{% endhint %}
+## 核心价值
 
 {% hint style="info" %}
-### What is a smart contract
-
-Smart contracts are automated, executable computer programs that run on the blockchain. They automatically execute contract terms when predetermined conditions are met, without the need for intermediaries. The core idea of smart contracts is to implement the terms of traditional contracts through code, with features such as transparency, immutability, and decentralization (no need for trusted third parties or guarantees from institutions, naturally secure and reliable).
-
-The smart contracts of BlockATM are created independently by enterprises and owned by enterprise administrator wallet addresses.
+**去中心化自托管**：您的资产由您完全控制。资金存储在区块链上的智能合约中，只有您指定的签名地址才能提取资产。BlockATM 无法访问或控制您的资金。
 {% endhint %}
 
+| 特性 | 说明 |
+|------|------|
+| 🔐 **自主托管** | 智能合约归企业所有，资产完全自管 |
+| 🔗 **无需许可** | 资金提取无金额限制、无时间限制、无需授权 |
+| 🌐 **多链支持** | 支持 TRON (TRC20)、Ethereum (ERC20)、Arbitrum (ARB20) |
+| 💰 **透明费率** | 费用固定，无隐藏收费 |
 
+## 产品服务
 
-### Our values
+### 收币 (Safepay)
+用户通过连接钱包或扫描二维码向您的智能合约付款，资金直接转入您的合约地址。
 
-BlockATM aims to use blockchain smart contract technology and features (such as public transparency, tamper resistance, and trustlessness) to provide enterprises with a secure cryptocurrency payment solution that does not require verification to establish trust and allows for self-custody of assets. This will actively promote the development of decentralized finance (Defi) industry based on this foundation.
+[了解收币产品 →](products/safepay/README.md)
 
+### 付币 (Batch Payout)
+批量向用户支付加密货币，支持余额支付和授权支付两种模式。
 
+[了解付币产品 →](products/batch-payout/README.md)
 
-### Our vision
+## 快速接入
 
-The vision of BlockATM is to become the preferred decentralized payment protocol provider for enterprises that actively embrace cryptocurrency.
+| 接入方式 | 适合场景 | 接入时间 |
+|---------|---------|---------|
+| **Widget SDK** | 快速集成收银台 | 30 分钟 |
+| **Open API** | 深度定制，功能完整 | 2-4 小时 |
+| **Webhook** | 接收支付事件通知 | 1 小时 |
 
+[查看集成方式 →](integration/widget-sdk/README.md)
+
+## 费用说明
+
+| 类型 | 费用 |
+|------|------|
+| 创建智能合约 | 200 USD/个 |
+| 收币（连接钱包） | 2 USD/笔 |
+| 收币（扫描支付） | 0.4%/笔 |
+| 付币 | 1 USD/笔 |
+
+[查看详细费用 →](products/safepay/fees.md)
+
+## 更新日志
+
+| 版本 | 日期 | 说明 |
+|------|------|------|
+| V5.8.0 | 2026-XX-XX | 统一支付方式，支持授权付币 |
+| V2.3.0 | 2026-01-13 | 上线授权管理模式 |
+| V2.2.0 | 2025-XX-XX | 支持 Ethereum/Tron 提现 |
+| V2.1.0 | 2025-XX-XX | 初始版本 |
+
+[查看完整更新日志 →](changelog/README.md)
+
+---
+
+## 需要帮助？
+
+- 📧 技术支持：support@blockatm.net
+- 📖 [常见问题](faq/README.md)
+- 🔧 [集成指南](integration/guides/collect-guide.md)
