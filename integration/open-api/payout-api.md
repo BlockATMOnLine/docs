@@ -49,19 +49,15 @@ POST /order/api/v2/payout/order
 |------|------|------|
 | orderNo | String | 订单号 |
 | orderId | String | 订单 ID |
-| status | Integer | 订单状态 |
+| status | String | 订单状态 |
 | createTime | Long | 创建时间 |
 
 ### 订单状态
 
 | 状态值 | 说明 |
 |--------|------|
-| 0 | 待审核 |
-| 1 | 审核通过 |
-| 2 | 审核拒绝 |
-| 3 | 执行中 |
-| 4 | 执行成功 |
-| 5 | 执行失败 |
+| SUCCESS | 付币成功 |
+| REFUSE | 付币被拒绝 |
 
 ## 查询付币订单
 
@@ -90,11 +86,11 @@ GET /order/api/v2/payout/detail
 | symbol | String | 代币符号 |
 | payoutType | Integer | 支付类型 |
 | txId | String | 链上交易哈希 |
-| status | Integer | 订单状态 |
+| status | String | 订单状态 |
 | fee | String | 手续费 |
+| gasAmount | String | Gas 消耗 |
 | createTime | Long | 创建时间 |
 | updateTime | Long | 更新时间 |
-| failReason | String | 失败原因（失败时返回） |
 
 ## 批量创建付币订单
 

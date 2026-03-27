@@ -87,7 +87,7 @@ GET /order/api/v2/payorder/detail
 | amount | String | 订单金额 |
 | symbol | String | 代币符号 |
 | chainId | String | 网络 |
-| status | Integer | 订单状态 |
+| status | String | 订单状态 |
 | txId | String | 链上交易哈希 |
 | createTime | Long | 创建时间 |
 | updateTime | Long | 更新时间 |
@@ -96,11 +96,10 @@ GET /order/api/v2/payorder/detail
 
 | 状态值 | 说明 |
 |--------|------|
-| 0 | 待支付 |
-| 1 | 支付中 |
-| 2 | 已支付 |
-| 3 | 已取消 |
-| 4 | 已过期 |
+| PENDING | 待支付 |
+| SUCCESS | 已支付 |
+| EXPIRED | 已过期 |
+| CANCELLED | 已取消 |
 
 ## 查询收币订单列表
 
@@ -118,7 +117,7 @@ GET /order/api/v2/payorder/list
 |------|------|------|------|
 | startTime | Long | 否 | 开始时间（毫秒） |
 | endTime | Long | 否 | 结束时间（毫秒） |
-| status | Integer | 否 | 订单状态 |
+| status | String | 否 | 订单状态 |
 | page | Integer | 否 | 页码，默认 1 |
 | pageSize | Integer | 否 | 每页数量，默认 20 |
 
