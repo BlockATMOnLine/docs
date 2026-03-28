@@ -1,4 +1,4 @@
-# Webhook
+# 概述
 
 Webhook 用于在支付事件发生时，实时通知您的服务器。
 
@@ -38,12 +38,12 @@ sequenceDiagram
 
 ### 请求头
 
-| Header | 说明 | 示例 |
-|--------|------|------|
-| Content-Type | 内容类型 | application/json |
-| BlockATM-Signature-V2 | HMAC-SHA256 签名 | c3109d97... |
-| BlockATM-Request-Time | Unix 时间戳（毫秒） | 1743060268000 |
-| BlockATM-Event | 事件类型 | payment / payout |
+| Header                | 说明             | 示例               |
+| --------------------- | -------------- | ---------------- |
+| Content-Type          | 内容类型           | application/json |
+| BlockATM-Signature-V2 | HMAC-SHA256 签名 | c3109d97...      |
+| BlockATM-Request-Time | Unix 时间戳（毫秒）   | 1743060268000    |
+| BlockATM-Event        | 事件类型           | payment / payout |
 
 ### 请求格式
 
@@ -65,10 +65,10 @@ BlockATM-Event: Payment
 
 ## 事件类型
 
-| 事件 | 说明 | 详细文档 |
-|------|------|----------|
+| 事件      | 说明       | 详细文档                         |
+| ------- | -------- | ---------------------------- |
 | payment | 收币订单状态变更 | [查看详情 →](payment-webhook.md) |
-| payout | 付币订单状态变更 | [查看详情 →](payout-webhook.md) |
+| payout  | 付币订单状态变更 | [查看详情 →](payout-webhook.md)  |
 
 ## 响应处理
 
@@ -99,19 +99,16 @@ def handle_webhook():
 ## 重要注意事项
 
 {% hint style="warning" %}
-### 安全与可靠性要求
+#### 安全与可靠性要求
 
 1. **使用 HTTPS**：确保您的 Webhook URL 使用 HTTPS 协议
-
 2. **返回 HTTP 200**：服务器必须返回 HTTP 200 确认收到请求
-
 3. **幂等处理**：同一事件可能收到多次通知，请确保处理逻辑幂等
-
 4. **重试机制**：如果投递失败，BlockATM 会在 24 小时内重试 5 次
 {% endhint %}
 
 ## 下一步
 
-- [查看收币事件 →](payment-webhook.md)
-- [查看付币事件 →](payout-webhook.md)
-- [查看签名验证 →](verification.md)
+* [查看收币事件 →](payment-webhook.md)
+* [查看付币事件 →](payout-webhook.md)
+* [查看签名验证 →](verification.md)

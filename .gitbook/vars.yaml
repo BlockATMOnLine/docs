@@ -1,11 +1,4 @@
-# 全局变量
-
-# 当前最新版本
-latest_version: "V5.8.0"
-
-# 技术支持
+latest_version: V5.8.0
 support_email: support@blockatm.net
-
-# 文档信息
-docs_version: "1.0"
-docs_updated: "2026-03-25"
+docs_version: '1.0'
+docs_updated: '2026-03-25'

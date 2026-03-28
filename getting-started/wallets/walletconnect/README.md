@@ -8,25 +8,25 @@ WalletConnect 允许您使用移动钱包（如 Trust Wallet、TokenPocket 等�
 
 ## 产品概述
 
-| 特性 | 说明 |
-|------|------|
-| 协议类型 | 开放协议 |
-| 支持钱包 | 300+ 钱包 |
-| 支持网络 | 多链（EVM + 非 EVM） |
-| 官网 | [walletconnect.org](https://walletconnect.org) |
-| 特点 | 扫码连接、端到端加密 |
+| 特性   | 说明                                             |
+| ---- | ---------------------------------------------- |
+| 协议类型 | 开放协议                                           |
+| 支持钱包 | 300+ 钱包                                        |
+| 支持网络 | 多链（EVM + 非 EVM）                                |
+| 官网   | [walletconnect.org](https://walletconnect.org) |
+| 特点   | 扫码连接、端到端加密                                     |
 
 ## 支持的钱包
 
 WalletConnect 支持 300+ 钱包，以下是常用钱包：
 
-| 钱包 | 平台 | 官网 |
-|------|------|------|
-| Trust Wallet | iOS/Android | [trustwallet.com](https://trustwallet.com) |
-| TokenPocket | iOS/Android | [tokenpocket.pro](https://www.tokenpocket.pro) |
-| imToken | iOS/Android | [imtoken.io](https://imtoken.io) |
-| MetaMask Mobile | iOS/Android | [metamask.io](https://metamask.io) |
-| Rainbow | iOS/Android | [rainbow.me](https://rainbow.me) |
+| 钱包              | 平台          | 官网                                             |
+| --------------- | ----------- | ---------------------------------------------- |
+| Trust Wallet    | iOS/Android | [trustwallet.com](https://trustwallet.com)     |
+| TokenPocket     | iOS/Android | [tokenpocket.pro](https://www.tokenpocket.pro) |
+| imToken         | iOS/Android | [imtoken.io](https://imtoken.io)               |
+| MetaMask Mobile | iOS/Android | [metamask.io](https://metamask.io)             |
+| Rainbow         | iOS/Android | [rainbow.me](https://rainbow.me)               |
 
 {% hint style="info" %}
 **提示**：几乎所有主流移动钱包都支持 WalletConnect。在钱包中寻找"WalletConnect"或"扫描二维码"功能。
@@ -36,17 +36,17 @@ WalletConnect 支持 300+ 钱包，以下是常用钱包：
 
 ### ✅ 优势
 
-- **支持多种钱包**：不限制特定钱包品牌
-- **移动端友好**：专为移动用户设计
-- **安全性高**：端到端加密，私钥不离开手机
-- **便捷**：扫码即可连接，无需安装浏览器插件
-- **多会话**：可同时连接多个 DApp
+* **支持多种钱包**：不限制特定钱包品牌
+* **移动端友好**：专为移动用户设计
+* **安全性高**：端到端加密，私钥不离开手机
+* **便捷**：扫码即可连接，无需安装浏览器插件
+* **多会话**：可同时连接多个 DApp
 
 ### ⚠️ 限制
 
-- **需要移动钱包**：必须有支持 WalletConnect 的移动钱包
-- **需要手机参与**：每笔交易需要手机确认
-- **依赖网络**：手机和网络需保持连接
+* **需要移动钱包**：必须有支持 WalletConnect 的移动钱包
+* **需要手机参与**：每笔交易需要手机确认
+* **依赖网络**：手机和网络需保持连接
 
 ## 连接步骤
 
@@ -80,9 +80,10 @@ WalletConnect 支持 300+ 钱包，以下是常用钱包：
 ### 步骤 5：验证连接
 
 连接成功后，您会看到：
-- 钱包地址显示
-- 账户余额（如适用）
-- 可以进行收币/付币操作
+
+* 钱包地址显示
+* 账户余额（如适用）
+* 可以进行收币/付币操作
 
 ## 使用流程
 
@@ -123,6 +124,7 @@ sequenceDiagram
 ### 查看已连接的 DApp
 
 在钱包 App 中：
+
 1. 进入"设置"或"个人资料"
 2. 找到"WalletConnect"或"已连接的 DApp"
 3. 查看和管理连接
@@ -130,10 +132,12 @@ sequenceDiagram
 ### 断开连接
 
 **方式 A：在 BlockATM 断开**
+
 1. 点击页面右上角钱包地址
 2. 选择"断开连接"
 
 **方式 B：在钱包断开**
+
 1. 打开钱包 App
 2. 进入 WalletConnect 管理
 3. 找到 BlockATM
@@ -142,16 +146,19 @@ sequenceDiagram
 ## 常见问题
 
 ### 二维码过期了怎么办？
+
 二维码有时效性。刷新页面重新获取二维码即可。
 
 ### 扫码后没反应？
 
 **可能原因**：
-- 网络延迟
-- 钱包版本过旧
-- WalletConnect 协议版本不匹配
+
+* 网络延迟
+* 钱包版本过旧
+* WalletConnect 协议版本不匹配
 
 **解决方法**：
+
 1. 检查手机网络
 2. 更新钱包到最新版本
 3. 刷新 BlockATM 页面重试
@@ -159,18 +166,21 @@ sequenceDiagram
 ### 收不到交易请求？
 
 **检查项**：
-- 手机网络是否畅通
-- 钱包通知权限是否开启
-- 钱包是否在后台运行
+
+* 手机网络是否畅通
+* 钱包通知权限是否开启
+* 钱包是否在后台运行
 
 ### 支持哪些网络？
+
 WalletConnect 支持多个网络：
-- Ethereum (ERC20)
-- TRON (TRC20)
-- Arbitrum
-- BSC
-- Polygon
-- 等等
+
+* Ethereum (ERC20)
+* TRON (TRC20)
+* Arbitrum
+* BSC
+* Polygon
+* 等等
 
 具体支持情况取决于您的钱包。
 
@@ -178,14 +188,15 @@ WalletConnect 支持多个网络：
 
 {% hint style="warning" %}
 **安全提醒**：
-- 只扫描 BlockATM 官方的二维码
-- 连接前检查网站域名
-- 不要授权不明的交易请求
-- 定期清理不再使用的 DApp 连接
+
+* 只扫描 BlockATM 官方的二维码
+* 连接前检查网站域名
+* 不要授权不明的交易请求
+* 定期清理不再使用的 DApp 连接
 {% endhint %}
 
 ## 下一步
 
-- [创建收币合约 →](../integration/guides/collect-guide.md)
-- [获取测试币 →](../getting-started/supported-networks.md)
-- [开始收币集成 →](../integration/guides/collect-guide.md)
+* [创建收币合约 →](../../../wallets/integration/guides/collect-guide.md)
+* [获取测试币 →](../../../wallets/getting-started/supported-networks.md)
+* [开始收币集成 →](../../../wallets/integration/guides/collect-guide.md)

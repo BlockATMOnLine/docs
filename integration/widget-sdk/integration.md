@@ -1,4 +1,4 @@
-# Widget SDK 三步集成
+# 三步集成
 
 本指南将帮助您在 30 分钟内完成 Widget SDK 的集成。
 
@@ -13,8 +13,6 @@ Widget SDK 是接入 BlockATM 最快速的方式，只需三步即可在您的�
 ## 集成流程图
 
 下图展示了集成的完整流程：
-
-![集成流程图](../.gitbook/assets/image%20(40).png)
 
 ## 步骤 1：引入 SDK
 
@@ -75,8 +73,6 @@ window.BlockATM.init(
 1. 登录 BlockATM 管理后台
 2. 进入「收银台」→「集成」
 
-![获取 API Key](../.gitbook/assets/image%20(48).png)
-
 {% hint style="info" %}
 **集成信息**：在集成页面，您可以获取收银台 ID 和 API 密钥。
 {% endhint %}
@@ -129,6 +125,6 @@ window.BlockATM.init(
 
 ## 下一步
 
-- [查看完整参数说明 →](parameters.md)
-- [查看 API 文档 →](../open-api/README.md)
-- [查看 Webhook 配置 →](../webhooks/README.md)
+* [查看完整参数说明 →](parameters.md)
+* [查看 API 文档 →](../open-api/)
+* [查看 Webhook 配置 →](../webhooks/)
