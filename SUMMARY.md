@@ -32,6 +32,13 @@
   * [TronLink](getting-started/wallets/tronlink/README.md)
   * [WalletConnect](getting-started/wallets/walletconnect/README.md)
 
+## 集成指南
+
+* [收款集成](integration/guides/collect-guide.md)
+* [收款支付流程](integration/guides/payment-flow.md)
+* [付币集成](integration/guides/payout-guide.md)
+* [特殊订单处理](integration/guides/exception-handling.md)
+
 ## Widget SDK
 
 * [概述](integration/widget-sdk/README.md)
@@ -56,13 +63,6 @@
 * [收款事件](integration/webhooks/payment-webhook.md)
 * [付币事件](integration/webhooks/payout-webhook.md)
 * [签名验证](integration/webhooks/verification.md)
-
-## 集成指南
-
-* [收款集成](integration/guides/collect-guide.md)
-* [收款支付流程](integration/guides/payment-flow.md)
-* [异常订单处理](integration/guides/exception-handling.md)
-* [付币集成](integration/guides/payout-guide.md)
 
 ## ❓ 常见问题
 
