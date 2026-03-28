@@ -2,7 +2,7 @@
 
 ## 🟢 新手入门
 
-* [BlockATM 是什么](getting-started/what-is-blockatm.md)
+* [BlockATM 概述](getting-started/what-is-blockatm.md)
 * [核心概念](getting-started/core-concepts.md)
 * [快速开始](getting-started/quickstart.md)
 
