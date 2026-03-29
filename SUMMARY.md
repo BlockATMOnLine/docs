@@ -2,11 +2,11 @@
 
 * [README](README.md)
 
-## 🟢 新手入门
+## 🏠 BlockATM
 
-* [BlockATM 概述](getting-started/what-is-blockatm.md)
-* [核心概念](getting-started/core-concepts.md)
-* [快速开始](getting-started/quickstart.md)
+* [概述](blockatm/what-is-blockatm.md)
+* [核心概念](blockatm/core-concepts.md)
+* [快速开始](blockatm/quickstart.md)
 
 ## 收币
 
@@ -32,7 +32,7 @@
   * [TronLink](getting-started/wallets/tronlink/README.md)
   * [WalletConnect](getting-started/wallets/walletconnect/README.md)
 
-## 集成指南
+## 📖 集成指南
 
 * [收款集成](integration/guides/collect-guide.md)
 * [收款支付流程](integration/guides/payment-flow.md)
