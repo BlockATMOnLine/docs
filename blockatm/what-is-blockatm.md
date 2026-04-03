@@ -46,58 +46,23 @@ BlockATM 是全球首个去中心化加密货币支付协议，基于区块链�
     'theme': 'neutral',
     'themeVariables': {
       'primaryColor': '#6366F1',
-      'primaryTextColor': '#1E293B',
-      'primaryBorderColor': '#6366F1',
-      'lineColor': '#94A3B8',
-      'secondaryColor': '#E0E7FF',
-      'tertiaryColor': '#F8FAFC'
-    },
-    'flowchart': {
-      'curve': 'basis',
-      'nodeSpacing': 50,
-      'rankSpacing': 80
+      'lineColor': '#94A3B8'
     }
   }
 }%%
 graph LR
-    subgraph "🧑‍💻 用户层"
-        U["👤 用户"]
-    end
+    A["👤 用户"] -->|"① 发起支付"| B["🏪 BlockATM<br/>收银台"]
+    B -->|"② 链上执行"| C["⛓️ 区块链"]
+    C -->|"③ 事件通知"| B
+    B -->|"④ Webhook"| D["📱 商户系统"]
 
-    subgraph "🏪 商户系统"
-        W["⚙️ Widget SDK / Open API"]
-        M["📱 商户应用"]
-    end
-
-    subgraph "🔷 BlockATM 基础设施"
-        C["🏛️ 收银台服务"]
-        O["📋 订单管理"]
-        N["👁️ 链上监控"]
-    end
-
-    subgraph "⛓️ 区块链网络"
-        T["🔵 TRON<br/><small>TRC-20</small>"]
-        E["🟢 Ethereum<br/><small>ERC-20</small>"]
-        A["🟣 Arbitrum<br/><small>ARB-20</small>"]
-    end
-
-    U -->|1. 发起支付| M
-    M -->|2. 初始化| W
-    W -->|3. 创建订单| C
-    C -->|4. 部署/调用| T
-    C -->|4. 部署/调用| E
-    C -->|4. 部署/调用| A
-    T -->|5. 事件通知| N
-    E -->|5. 事件通知| N
-    A -->|5. 事件通知| N
-    N -->|6. Webhook| M
-
-    classDef nodeStyle fill:#F1F5F9,stroke:#64748B,stroke-width:2px,color:#1E293B
-    classDef subStyle fill:#F8FAFC,stroke:#CBD5E1,stroke-width:1px
-
-    class U,W,M,C,O,N,T,E,A nodeStyle
-    class T,E,A subStyle
+    style A fill:#EEF2FF,stroke:#6366F1,color:#4338CA
+    style B fill:#FEF3C7,stroke:#F59E0B,color:#92400E
+    style C fill:#DBEAFE,stroke:#3B82F6,color:#1E40AF
+    style D fill:#D1FAE5,stroke:#10B981,color:#065F46
 ```
+
+**支持的网络**：TRON (TRC-20) · Ethereum (ERC-20) · Arbitrum (ARB-20)
 
 ## 资金流向
 
