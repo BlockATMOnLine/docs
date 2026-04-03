@@ -5,12 +5,27 @@
 ## 集成流程概览
 
 ```mermaid
+%%{
+  init: {
+    'theme': 'neutral',
+    'themeVariables': {
+      'primaryColor': '#6366F1'
+    }
+  }
+}%%
 graph LR
-    A[创建收币合约] --> B[关联钱包]
-    B --> C[创建收银台]
-    C --> D[集成收银台]
-    D --> E[测试验收]
-    E --> F[处理异常订单]
+    A["📦 创建收币合约"] --> B["🔗 关联钱包"]
+    B --> C["🏪 创建收银台"]
+    C --> D["⚙️ 集成收银台"]
+    D --> E["🧪 测试验收"]
+    E --> F["🔧 处理异常"]
+
+    style A fill:#FEF3C7,stroke:#F59E0B
+    style B fill:#DBEAFE,stroke:#3B82F6
+    style C fill:#D1FAE5,stroke:#10B981
+    style D fill:#EEF2FF,stroke:#6366F1
+    style E fill:#FEE2E2,stroke:#EF4444
+    style F fill:#E0E7FF,stroke:#6366F1
 ```
 
 ## 步骤 1：创建收币合约

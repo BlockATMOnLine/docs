@@ -8,6 +8,47 @@ BlockATM Open API 提供完整的支付接口，支持收币、付币、订单�
 - ✅ **签名安全**：HMAC-SHA256 请求签名
 - ✅ **Webhook 支持**：实时接收支付事件通知
 
+## API 架构
+
+```mermaid
+%%{
+  init: {
+    'theme': 'neutral',
+    'themeVariables': {
+      'primaryColor': '#6366F1'
+    }
+  }
+}%%
+graph TB
+    subgraph "🏠 您的服务端"
+        A["🖥️ 业务服务器"]
+    end
+
+    subgraph "🔷 BlockATM Open API"
+        B["⚙️ 配置接口<br/>/admin/api/v2/pub/*"]
+        C["💰 收款接口<br/>/order/api/v2/pay*"]
+        D["📤 付币接口<br/>/order/api/v2/payout/*"]
+    end
+
+    subgraph "⛓️ 区块链网络"
+        T["🔵 TRON"]
+        E["🟢 Ethereum"]
+        A2["🟣 Arbitrum"]
+    end
+
+    A -->|"调用 API"| B
+    A -->|"调用 API"| C
+    A -->|"调用 API"| D
+    B -->|"查询网络"| T
+    B -->|"查询网络"| E
+    B -->|"查询网络"| A2
+
+    style A fill:#EEF2FF,stroke:#6366F1
+    style B fill:#D1FAE5,stroke:#10B981
+    style C fill:#FEF3C7,stroke:#F59E0B
+    style D fill:#DBEAFE,stroke:#3B82F6
+```
+
 ## API 环境
 
 | 环境 | Base URL |
@@ -21,22 +62,22 @@ BlockATM Open API 提供完整的支付接口，支持收币、付币、订单�
 
 | 接口 | 方法 | 说明 |
 |------|------|------|
-| `/admin/api/v2/pub/allNetworks` | GET | 获取支持的网络列表 |
-| `/admin/api/v2/pub/cashier/info` | GET | 获取收银台配置信息 |
+| `GET /admin/api/v2/pub/allNetworks` | 获取支持的网络列表 |
+| `GET /admin/api/v2/pub/cashier/info` | 获取收银台配置信息 |
 
 ### 收款接口
 
 | 接口 | 方法 | 说明 |
 |------|------|------|
-| `/order/api/v2/payorder/list` | GET | 查询收款订单列表 |
-| `/order/api/v2/payorder/detail` | GET | 查询收款订单详情 |
+| `GET /order/api/v2/payorder/list` | 查询收款订单列表 |
+| `GET /order/api/v2/payorder/detail` | 查询收款订单详情 |
 
 ### 付币接口
 
 | 接口 | 方法 | 说明 |
 |------|------|------|
-| `/order/api/v2/payout/order` | POST | 创建付币订单（需签名） |
-| `/order/api/v2/payout/detail` | GET | 查询付币订单详情 |
+| `POST /order/api/v2/payout/order` | 创建付币订单（需签名） |
+| `GET /order/api/v2/payout/detail` | 查询付币订单详情 |
 
 ## 快速开始
 

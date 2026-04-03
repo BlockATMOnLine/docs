@@ -50,14 +50,40 @@
 ## 订单状态流转
 
 ```mermaid
+%%{
+  init: {
+    'theme': 'neutral',
+    'themeVariables': {
+      'primaryColor': '#6366F1',
+      'fontFamily': 'Inter'
+    }
+  }
+}%%
 stateDiagram-v2
-    [*] --> PENDING: 用户发起支付
-    PENDING --> SUCCESS: 区块链确认完成
-    PENDING --> EXPIRED: 支付超时（默认 30 分钟）
-    PENDING --> CANCELLED: 用户取消支付
+    [*] --> PENDING
+
+    state PENDING {
+        [*] --> 交易广播中
+        交易广播中 --> 等待确认
+        等待确认 --> 区块确认
+    }
+
+    PENDING --> SUCCESS : ✅ 支付成功
+    PENDING --> EXPIRED : ⏰ 超时未支付
+    PENDING --> CANCELLED : ❌ 用户取消
+
     SUCCESS --> [*]
     EXPIRED --> [*]
     CANCELLED --> [*]
+
+    note right of SUCCESS
+        资金已到账合约
+        Webhook 通知商户
+    end note
+
+    note right of PENDING
+        默认超时时间 30 分钟
+    end note
 ```
 
 ## 处理建议

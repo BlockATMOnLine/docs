@@ -38,17 +38,109 @@ BlockATM 是全球首个去中心化加密货币支付协议，基于区块链�
 | 收币（扫码支付） | 0.4%/笔 |
 | 付币 | 1 USD/笔 |
 
-## 工作原理
+## 系统架构
 
 ```mermaid
+%%{
+  init: {
+    'theme': 'neutral',
+    'themeVariables': {
+      'primaryColor': '#6366F1',
+      'primaryTextColor': '#1E293B',
+      'primaryBorderColor': '#6366F1',
+      'lineColor': '#94A3B8',
+      'secondaryColor': '#E0E7FF',
+      'tertiaryColor': '#F8FAFC'
+    },
+    'flowchart': {
+      'curve': 'basis',
+      'nodeSpacing': 50,
+      'rankSpacing': 80
+    }
+  }
+}%%
 graph LR
-    A[用户] -->|连接钱包| B[您的收银台]
-    B -->|支付| C[智能合约]
-    C -->|存款| D[合约余额]
-    D -->|提取| E[您的钱包]
-    
-    style C fill:#e1f5ff
-    style D fill:#e1f5ff
+    subgraph "🧑‍💻 用户层"
+        U["👤 用户"]
+    end
+
+    subgraph "🏪 商户系统"
+        W["⚙️ Widget SDK / Open API"]
+        M["📱 商户应用"]
+    end
+
+    subgraph "🔷 BlockATM 基础设施"
+        C["🏛️ 收银台服务"]
+        O["📋 订单管理"]
+        N["👁️ 链上监控"]
+    end
+
+    subgraph "⛓️ 区块链网络"
+        T["🔵 TRON<br/><small>TRC-20</small>"]
+        E["🟢 Ethereum<br/><small>ERC-20</small>"]
+        A["🟣 Arbitrum<br/><small>ARB-20</small>"]
+    end
+
+    U -->|1. 发起支付| M
+    M -->|2. 初始化| W
+    W -->|3. 创建订单| C
+    C -->|4. 部署/调用| T
+    C -->|4. 部署/调用| E
+    C -->|4. 部署/调用| A
+    T -->|5. 事件通知| N
+    E -->|5. 事件通知| N
+    A -->|5. 事件通知| N
+    N -->|6. Webhook| M
+
+    classDef nodeStyle fill:#F1F5F9,stroke:#64748B,stroke-width:2px,color:#1E293B
+    classDef subStyle fill:#F8FAFC,stroke:#CBD5E1,stroke-width:1px
+
+    class U,W,M,C,O,N,T,E,A nodeStyle
+    class T,E,A subStyle
+```
+
+## 资金流向
+
+```mermaid
+%%{
+  init: { 'theme': 'neutral' }
+}%%
+graph LR
+    A["👤 用户钱包"] -->|"① 转账到合约"| B["📦 智能合约"]
+    B -->|"② 保管资产"| C["💎 合约余额"]
+    C -->|"③ 按需提取"| D["🏦 商户钱包"]
+
+    style A fill:#EEF2FF,stroke:#6366F1,color:#4338CA
+    style B fill:#FEF3C7,stroke:#F59E0B,color:#92400E
+    style C fill:#DBEAFE,stroke:#3B82F6,color:#1E40AF
+    style D fill:#D1FAE5,stroke:#10B981,color:#065F46
+```
+
+## 支付流程
+
+```mermaid
+%%{
+  init: {
+    'theme': 'neutral',
+    'themeVariables': {
+      'primaryColor': '#6366F1',
+      'primaryTextColor': '#1E293B'
+    }
+  }
+}%%
+stateDiagram-v2
+    [*] --> 待支付: 商户创建订单
+    待支付 --> 已支付: 用户完成转账
+    待支付 --> 已取消: 用户主动取消
+    待支付 --> 已过期: 超时未支付
+    已支付 --> [*]: 流程结束
+    已取消 --> [*]: 流程结束
+    已过期 --> [*]: 流程结束
+
+    note right of 已支付
+        资金已到账合约
+        Webhook 通知商户
+    end note
 ```
 
 ## 适用场景

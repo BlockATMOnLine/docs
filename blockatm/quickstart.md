@@ -2,6 +2,31 @@
 
 本指南将帮助您在 15 分钟内完成 BlockATM 的首次集成，从零开始到收到第一笔测试支付。
 
+## 集成总览
+
+```mermaid
+%%{
+  init: {
+    'theme': 'neutral',
+    'themeVariables': {
+      'primaryColor': '#6366F1',
+      'fontFamily': 'Inter'
+    }
+  }
+}%%
+graph LR
+    A["👤 创建钱包"] --> B["📦 部署合约"]
+    B --> C["🏪 创建收银台"]
+    C --> D["⚙️ 集成 SDK"]
+    D --> E["🧪 测试验收"]
+
+    style A fill:#EEF2FF,stroke:#6366F1,color:#4338CA
+    style B fill:#FEF3C7,stroke:#F59E0B,color:#92400E
+    style C fill:#DBEAFE,stroke:#3B82F6,color:#1E40AF
+    style D fill:#D1FAE5,stroke:#10B981,color:#065F46
+    style E fill:#FEE2E2,stroke:#EF4444,color:#991B1B
+```
+
 ## 前置准备清单（3 分钟）
 
 在开始之前，请完成以下准备：
