@@ -58,7 +58,6 @@ Batch payout cryptocurrency to users, supporting both balance mode and allowance
 
 | Version | Date | Description |
 | ------ | ---------- | ------------------- |
-| V5.8.0 | 2026-XX-XX | Unified payment method, support for allowance payout |
 | V2.3.0 | 2026-01-13 | Launched allowance management mode |
 | V2.2.0 | 2025-10-15 | Support for Ethereum/Tron withdrawal |
 | V2.1.0 | 2025-06-10 | Initial version |
