@@ -1,33 +1,75 @@
-# BlockATM Introduction
+---
+hidden: true
+---
 
-### Introduction
+# README
 
-BlcokATM is the world's first decentralized payment protocol, built on blockchain smart contract technology to create a payment solution that does not involve centralized institutions and is not controlled by them. It changes the traditional payment industry's asset custody and control, allowing businesses to fully control their assets, ensuring 100% security.
+BlockATM is the world's first decentralized payment protocol based on blockchain smart contract technology, providing businesses with a secure, self-custodial cryptocurrency payment solution.
 
-{% hint style="info" %}
-### What is decentralization?
-
-Decentralization refers to the process or design concept of dispersing power, control, or functions from a single central authority to multiple independent individuals, nodes, or entities. In the context of technology and blockchain, decentralization is often associated with distributed networks aimed at eliminating reliance on intermediaries or central institutions, enhancing system transparency, security, and resistance to censorship.\
-The main difference between decentralized payment gateways and centralized payment gateways lies in the fact that funds are held in smart contracts on the blockchain rather than being held by centralized institutions. Therefore, fund withdrawals and transfers have no limits on amount or time restrictions and do not require permission.
-{% endhint %}
+## Core Value
 
 {% hint style="info" %}
-### What is a smart contract
-
-Smart contracts are automated, executable computer programs that run on the blockchain. They automatically execute contract terms when predetermined conditions are met, without the need for intermediaries. The core idea of smart contracts is to implement the terms of traditional contracts through code, with features such as transparency, immutability, and decentralization (no need for trusted third parties or guarantees from institutions, naturally secure and reliable).
-
-The smart contracts of BlockATM are created independently by enterprises and owned by enterprise administrator wallet addresses.
+**Decentralized Self-Custody**: You have complete control over your assets. Funds are stored in smart contracts on the blockchain, and only your designated signature address can withdraw assets. BlockATM cannot access or control your funds.
 {% endhint %}
 
+| Feature | Description |
+| ----------- | ------------------------------------------------- |
+| 🔐 **Self-Custody** | Smart contracts owned by enterprise, assets fully self-managed |
+| 🔗 **Permissionless** | No amount limit, no time limit, no authorization required for withdrawals |
+| 🌐 **Multi-Chain Support** | Supports TRON (TRC20), Ethereum (ERC20), Arbitrum (ARB20) |
+| 💰 **Transparent Fees** | Fixed fees, no hidden charges |
 
+## Products & Services
 
-### Our values
+### Collection (Safepay)
 
-BlockATM aims to use blockchain smart contract technology and features (such as public transparency, tamper resistance, and trustlessness) to provide enterprises with a secure cryptocurrency payment solution that does not require verification to establish trust and allows for self-custody of assets. This will actively promote the development of decentralized finance (Defi) industry based on this foundation.
+Users pay to your smart contract by connecting their wallet or scanning a QR code, with funds directly transferred to your contract address.
 
+[Learn about Safepay →](products/safepay/)
 
+### Payout (Batch Payout)
 
-### Our vision
+Batch payout cryptocurrency to users, supporting both balance mode and allowance mode.
 
-The vision of BlockATM is to become the preferred decentralized payment protocol provider for enterprises that actively embrace cryptocurrency.
+[Learn about Batch Payout →](products/batch-payout/)
 
+## Quick Integration
+
+| Integration Method | Best For | Integration Time |
+| -------------- | --------- | ------ |
+| **Widget SDK** | Quick cashier integration | 30 minutes |
+| **Open API** | Deep customization, full features | 2-4 hours |
+| **Webhook** | Receive payment event notifications | 1 hour |
+
+[View integration options →](integration/widget-sdk/)
+
+## Fee Structure
+
+| Type | Fee |
+| -------- | --------- |
+| Smart Contract Creation | 200 USD/contract |
+| Collection (Wallet Connect) | 2 USD/transaction |
+| Collection (Scan Payment) | 0.4%/transaction |
+| Payout | 1 USD/transaction |
+
+[View detailed fees →](products/safepay/fees.md)
+
+## Changelog
+
+| Version | Date | Description |
+| ------ | ---------- | ------------------- |
+| V5.8.0 | 2026-XX-XX | Unified payment method, support for allowance payout |
+| V2.3.0 | 2026-01-13 | Launched allowance management mode |
+| V2.2.0 | 2025-10-15 | Support for Ethereum/Tron withdrawal |
+| V2.1.0 | 2025-06-10 | Initial version |
+
+[View complete changelog →](changelog/)
+
+***
+
+## Need Help?
+
+* 💬 Telegram: Passto_john
+* 📧 Email: john.feng@chixi88.com
+* 📖 [FAQ](faq/)
+* 🔧 [Integration Guide](integration/guides/collect-guide.md)
