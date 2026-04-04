@@ -398,7 +398,6 @@ const API_KEY = 'pck_xxxxxx';    // 替换为您的 API Key
 ### 高级功能
 
 * [付币功能](../getting-started/guides/payout-guide.md) - 批量支付
-* [授权模式](../getting-started/products/batch-payout/allowance-mode.md) - 提高资金效率
 * [异常处理](../getting-started/guides/exception-handling.md) - 处理失败订单
 
 ***

@@ -147,7 +147,7 @@ BlockATM 支持以下主流钱包：
 | **Trust Wallet** | 手机 App | Ethereum, Arbitrum | v8.0.0+ | ✅ 完全支持 |
 | **Bitget Wallet** | 手机 App | Ethereum, Arbitrum, TRON | v8.0.0+ | ✅ 完全支持 |
 | **OKX Wallet** | 手机 App | Ethereum, Arbitrum | v8.0.0+ | ✅ 完全支持 |
-| **OneKey** | 手机 App / 浏览器插件 | Ethereum, Arbitrum, TRON | v5.8.0+ | 🟡 部分支持 |
+| **OneKey** | 手机 App / 浏览器插件 | Ethereum, Arbitrum, TRON | - | 🟡 部分支持 |
 | **Ledger Live** | 硬件钱包（Nano X） | TRON | Ledger Live 2.107.0+ / app 5.11.0+ | ✅ 完全支持 |
 
 {% hint style="info" %}

@@ -31,14 +31,14 @@ function payoutWithBalance(
 **白名单要求**：余额支付方式，收款地址必须在白名单中。
 {% endhint %}
 
-### payoutWithAllowance() — V5.8.0
+### payoutWithAllowance()
 
 使用授权额度进行付币。
 
 ```solidity
 function payoutWithAllowance(
     address token,           // 代币地址
-    address from,            // 授权地址（V5.8.0 新增）
+    address from,            // 授权地址
     address[] memory recipients,  // 收款地址数组
     uint256[] memory amounts,     // 金额数组
     uint256 totalFee,         // 总手续费
@@ -48,11 +48,7 @@ function payoutWithAllowance(
 ) external onlyPacker returns (bool)
 ```
 
-{% hint style="warning" %}
-**V5.8.0 变更**：
-- 新增 `from` 参数，支持任意授权地址
-- 不再强制要求白名单
-{% endhint %}
+
 
 ## 事件
 
@@ -70,7 +66,7 @@ event BatchPayoutWithBalance(
 );
 ```
 
-### BatchPayoutWithAllowance — V5.8.0
+### BatchPayoutWithAllowance
 
 ```solidity
 event BatchPayoutWithAllowance(
@@ -92,7 +88,7 @@ event BatchPayoutWithAllowance(
 | payoutWithBalance() | 仅 Packer 角色 |
 | payoutWithAllowance() | 仅 Packer 角色 |
 
-## V5.8.0 合约变更
+## 合约变更
 
 | 变更项 | 说明 |
 |--------|------|

@@ -123,9 +123,7 @@ sequenceDiagram
     end
 ```
 
-{% hint style="info" %}
-**V5.8.0 特性**：授权模式下，不再强制要求白名单，任意地址都可以作为授权来源。
-{% endhint %}
+
 
 ## 余额 vs 授权对比
 
@@ -181,7 +179,7 @@ graph TB
 | **Owner** | 合约创建者 | 管理合约配置 |
 | **Packer** | 打包执行者 | 执行付币交易 |
 | **Finance** | 财务地址 | 有权从合约提取资金 |
-| **ColdWallet** | 冷钱包地址 | V5.8.0 可动态指定 |
+| **ColdWallet** | 冷钱包地址 | 可动态指定 |
 
 ## 异常处理
 
@@ -195,5 +193,5 @@ graph TB
 ## 下一步
 
 - [余额模式详解 →](balance-mode.md)
-- [授权模式详解 →](allowance-mode.md)
+
 - [查看合约接口 →](contract.md)

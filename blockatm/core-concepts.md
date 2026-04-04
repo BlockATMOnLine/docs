@@ -66,9 +66,7 @@ sequenceDiagram
     Token-->>Contract: 转账成功
 ```
 
-{% hint style="info" %}
-**5.8.0 新特性**：V5.8.0 支持任意地址授权给付币合约，不再强制要求白名单。
-{% endhint %}
+
 
 ## 网络与代币
 
