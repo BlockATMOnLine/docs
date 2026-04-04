@@ -50,5 +50,5 @@ All contract operations require signature verification:
 The original audit report file is located in project documentation:
 
 ```
-docs/5.7.0/内部合约审计报告.md
+docs/5.7.0/audit-report.md
 ```

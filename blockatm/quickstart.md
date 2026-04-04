@@ -231,18 +231,18 @@ Create a new HTML file on your computer:
   <div id="status"></div>
   <div id="blockatm-container"></div>
 
-  <!--引入 BlockATM SDK -->
+  <!-- Import BlockATM SDK -->
   <script src="https://test-pay.blockatm.net/libs/v2/BlockATM.umd.js?apiKey=YOUR_API_KEY"></script>
 
   <script>
-    // 替换为您的实际值
+    // Replace with your actual values
     const CASHIER_ID = 'YOUR_CASHIER_ID';
     const ORDER_NO = 'ORDER_' + Date.now();
-    const AMOUNT = '10'; // 测试金额：10 USDT
+    const AMOUNT = '10'; // Test amount: 10 USDT
     const SYMBOL = 'USDT';
-    const CHAIN_ID = 'TRON'; // 或 'ETHEREUM', 'ARBITRUM'
+    const CHAIN_ID = 'TRON'; // or 'ETHEREUM', 'ARBITRUM'
 
-    // 初始化收银台
+    // Initialize cashier
     window.BlockATM.init(
       document.getElementById('blockatm-container'),
       {

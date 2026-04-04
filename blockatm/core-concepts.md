@@ -9,7 +9,7 @@ BlockATM smart contracts involve three key address roles:
 | Role | Description | Permissions |
 | --------------- | ------------ | ----------------- |
 | **Owner Address** | Address that created the contract | Manage contract configuration |
-| **Signer Address** | Address有权从合约提取资金的地址 | Withdraw funds to Receiver address |
+| **Signer Address** | Address authorized to withdraw funds from the contract | Withdraw funds to Receiver address |
 | **Receiver Address** | Address where funds ultimately arrive | Receive funds |
 
 ### Permission Relationship Diagram

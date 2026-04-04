@@ -1,6 +1,6 @@
 # Allowance Mode (V5.8.0)
 
-Allowance mode is a payout method added in V5.8.0, where user authorizes contract to manage their tokens,无需预存资金到合约.
+Allowance mode is a payout method added in V5.8.0, where user authorizes contract to manage their tokens, no need to pre-deposit funds to the contract.
 
 ## How It Works
 

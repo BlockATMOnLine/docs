@@ -1,6 +1,6 @@
 # Widget SDK
 
-Widget SDK is the fastest way to integrate BlockATM,只需三步即可在您的应用中嵌入加密货币收银台。
+Widget SDK is the fastest way to integrate BlockATM. You can embed a cryptocurrency cashier in your application in just three steps.
 
 ## Features
 

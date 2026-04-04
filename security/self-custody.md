@@ -71,7 +71,7 @@ graph LR
 {% hint style="warning" %}
 **Important**: Self-custody means you bear full responsibility for fund security. Please be sure to:
 
-1. **Securely保管密钥**: Owner and Signer private keys/recovery phrases must be securely stored
+1. **Securely store keys**: Owner and Signer private keys/recovery phrases must be securely stored
 2. **Do not disclose**: Do not reveal your keys to anyone
 3. **Backup**: Make backup of keys to prevent loss
 4. **Be cautious with operations**: Contract configuration once set usually cannot be modified

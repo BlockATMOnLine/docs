@@ -4,11 +4,11 @@ This guide introduces security best practices when using BlockATM, helping you p
 
 ## Table of Contents
 
-1. [API Key Management](#api-key-管理)
-2. [Signature Address Management](#签名地址管理)
-3. [Withdrawal Address Security](#提币地址安全)
-4. [Monitoring Alert Configuration](#监控告警配置)
-5. [Emergency Response](#应急响应)
+1. [API Key Management](#api-key-management)
+2. [Signature Address Management](#signature-address-management)
+3. [Withdrawal Address Security](#withdrawal-address-security)
+4. [Monitoring Alert Configuration](#monitoring-alert-configuration)
+5. [Emergency Response](#emergency-response)
 
 ---
 
