@@ -2,7 +2,7 @@
 
 Safepay 是 BlockATM 提供的加密货币收款解决方案，支持两种收款方式。
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (11).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="../../.gitbook/assets/image (11).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ## 产品特点
 
@@ -24,7 +24,7 @@ Safepay 是 BlockATM 提供的加密货币收款解决方案，支持两种收�
 * 支持各种 ERC20/TRC20 代币
 * 支付金额准确，无手动输入错误
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (12).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="../../.gitbook/assets/image (12).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ### Scan2Pay（扫码支付）
 
@@ -36,7 +36,7 @@ Safepay 是 BlockATM 提供的加密货币收款解决方案，支持两种收�
 * 无需连接钱包操作
 * 兼容各种移动钱包 App
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (13).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left" data-with-frame="true"><figure><img src="../../.gitbook/assets/image (13).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ## 适用场景
 

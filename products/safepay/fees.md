@@ -101,7 +101,13 @@ graph LR
     Fee -->|2 USDT| BlockATM
 ```
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (14).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (17).png" alt="" width="375"><figcaption></figcaption></figure></div>
+#### WEB3收币合约提币
+
+<div align="left"><figure><img src="../../.gitbook/assets/image (14).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+#### 扫码收币合约提币
+
+<div align="left"><figure><img src="../../.gitbook/assets/image (17).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 | 对比项   | 收币           | 付币      |
 | ----- | ------------ | ------- |
