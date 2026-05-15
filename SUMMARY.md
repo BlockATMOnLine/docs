@@ -19,7 +19,7 @@
 
 * [付币概述](products/batch-payout/README.md)
 * [工作原理](products/batch-payout/how-it-works.md)
-* [余额模式](products/batch-payout/balance-mode.md)
+* [付币方式](products/batch-payout/balance-mode.md)
 * [合约接口](products/batch-payout/contract.md)
 * [费用说明](products/batch-payout/fees.md)
 
