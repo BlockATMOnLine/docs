@@ -17,16 +17,16 @@ Merchant transfers tokens from wallet to contract address, forming contract bala
 
 ## Applicable Scenarios
 
-- ✅ **Daily high-frequency payouts**: Such as salary distribution, reward distribution
-- ✅ **Funds already consolidated**: Merchant already has large funds in contract
-- ✅ **Fixed-amount batch payouts**: Such as rebates, subsidy distribution
+* ✅ **Daily high-frequency payouts**: Such as salary distribution, reward distribution
+* ✅ **Funds already consolidated**: Merchant already has large funds in contract
+* ✅ **Fixed-amount batch payouts**: Such as rebates, subsidy distribution
 
 ## Core Advantages
 
-| Advantage | Description |
-|------|------|
-| **Immediately Available** | Can be used for payout immediately after deposit |
-| **High Gas Efficiency** | Low Gas consumption for single payout |
+| Advantage                  | Description                                          |
+| -------------------------- | ---------------------------------------------------- |
+| **Immediately Available**  | Can be used for payout immediately after deposit     |
+| **High Gas Efficiency**    | Low Gas consumption for single payout                |
 | **Centralized Management** | Convenient for unified management and reconciliation |
 
 ## Usage Flow
@@ -50,6 +50,8 @@ Deposit amount: your desired pre-deposit amount
 **Gas**: TRON network deposit does not require additional Gas; Ethereum network needs to pay Gas.
 {% endhint %}
 
+<figure><img src="../../.gitbook/assets/image (50).png" alt="" width="375"><figcaption></figcaption></figure>
+
 ### 3. Create Payout Order
 
 ```json
@@ -64,13 +66,19 @@ POST /order/api/v2/payout/order
 }
 ```
 
-| Field | Description |
-|------|------|
+| Field      | Description         |
+| ---------- | ------------------- |
 | payoutType | 1 = Balance Payment |
 
 ### 4. Execute Payout
 
 After admin dashboard review, execute payout, contract balance deducts corresponding amount.
+
+
+
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+
+
 
 ## Amount Calculation
 
@@ -84,13 +92,13 @@ Actual Available = Contract Balance - Locked Amount
 
 ## Comparison with Allowance Mode
 
-| Comparison | Balance Mode | Allowance Mode |
-|-------|---------|---------|
-| Fund Location | Contract | User wallet |
-| Deposit/Authorization | Deposit to contract | User authorizes contract |
-| Fund Risk | Contract stolen risk | User wallet risk |
-| Fund Efficiency | Need to pre-deposit | No pre-deposit required |
-| Whitelist Required | Must | V5.8.0 not mandatory |
+| Comparison            | Balance Mode         | Allowance Mode           |
+| --------------------- | -------------------- | ------------------------ |
+| Fund Location         | Contract             | User wallet              |
+| Deposit/Authorization | Deposit to contract  | User authorizes contract |
+| Fund Risk             | Contract stolen risk | User wallet risk         |
+| Fund Efficiency       | Need to pre-deposit  | No pre-deposit required  |
+| Whitelist Required    | Must                 | V5.8.0 not mandatory     |
 
 ## FAQ
 

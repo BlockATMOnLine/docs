@@ -1,4 +1,4 @@
-# Allowance Mode (V5.8.0)
+# Allowance Mode
 
 Allowance mode is a payout method added in V5.8.0, where user authorizes contract to manage their tokens, no need to pre-deposit funds to the contract.
 
@@ -18,24 +18,24 @@ When merchant initiates payout request, contract directly transfers tokens from 
 
 ## V5.8.0 Core Changes
 
-| Change | Old Version | V5.8.0 |
-|-------|-------|--------|
-| Authorization Address | Constructor preset, fixed 1 | Method parameter dynamic input, any address |
-| Whitelist | Authorization payment must enable | No longer mandatory |
-| Amount Query | Backend timed refresh | Frontend real-time on-chain query |
+| Change                | Old Version                       | V5.8.0                                      |
+| --------------------- | --------------------------------- | ------------------------------------------- |
+| Authorization Address | Constructor preset, fixed 1       | Method parameter dynamic input, any address |
+| Whitelist             | Authorization payment must enable | No longer mandatory                         |
+| Amount Query          | Backend timed refresh             | Frontend real-time on-chain query           |
 
 ## Applicable Scenarios
 
-- ✅ **High capital efficiency requirement**: Don't want funds pre-deposited in contract
-- ✅ **Large-scale payouts**: Such as platform subsidies, reward distribution
-- ✅ **Multi-source funds**: Authorize payout from multiple different addresses
+* ✅ **High capital efficiency requirement**: Don't want funds pre-deposited in contract
+* ✅ **Large-scale payouts**: Such as platform subsidies, reward distribution
+* ✅ **Multi-source funds**: Authorize payout from multiple different addresses
 
 ## Core Advantages
 
-| Advantage | Description |
-|------|------|
-| **Zero Pre-deposit** | No need to pre-deposit, save Gas |
-| **Fund Security** | Funds stay in user wallet, lower risk |
+| Advantage               | Description                                              |
+| ----------------------- | -------------------------------------------------------- |
+| **Zero Pre-deposit**    | No need to pre-deposit, save Gas                         |
+| **Fund Security**       | Funds stay in user wallet, lower risk                    |
 | **Flexible Scheduling** | Can allocate funds from multiple authorization addresses |
 
 ## Usage Flow
@@ -52,8 +52,9 @@ Authorization amount: User sets themselves
 ```
 
 **Authorization Methods**:
-- Authorize directly in wallet (TRONStation / Etherscan)
-- Or guided by BlockATM admin dashboard
+
+* Authorize directly in wallet (TRONStation / Etherscan)
+* Or guided by BlockATM admin dashboard
 
 #### Platform Side Monitoring
 
@@ -78,6 +79,8 @@ sequenceDiagram
 **Deduplication Mechanism**: Through txHash + logIndex unique constraint, ensure events are not processed repeatedly.
 {% endhint %}
 
+<figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+
 ### Phase 2: Payout
 
 #### Query Available Amount
@@ -100,6 +103,8 @@ const available = allowance.lt(balance) ? allowance : balance;
 
 **Actual Available Amount = min(Authorization Amount, Wallet Balance)**
 
+<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
+
 #### Execute Payout
 
 ```json
@@ -115,9 +120,9 @@ POST /order/api/v2/payout/order
 }
 ```
 
-| Field | Description |
-|------|------|
-| payoutType | 2 = Allowance Payment |
+| Field       | Description                                          |
+| ----------- | ---------------------------------------------------- |
+| payoutType  | 2 = Allowance Payment                                |
 | fromAddress | Authorization address (selected from on-chain query) |
 
 ## Payment Method Selection
@@ -143,7 +148,7 @@ graph TB
 ```
 
 {% hint style="warning" %}
-**Important**: The two payment methods are ** mutually exclusive**, mixed use not supported. Even if total amount is sufficient, if single item is insufficient, execution will be rejected.
+**Important**: The two payment methods are \*\* mutually exclusive\*\*, mixed use not supported. Even if total amount is sufficient, if single item is insufficient, execution will be rejected.
 {% endhint %}
 
 ## Contract Interface
@@ -165,12 +170,12 @@ function payoutWithAllowance(
 
 ## Security
 
-| Safeguard | Description |
-|---------|------|
-| Authorization Verification | On-chain verification of authorization validity |
-| Amount Verification | Verify min(authorization, balance) before execution |
-| Signature Verification | Executor signature verification |
-| Deduplication Mechanism | txHash + logIndex to prevent duplicates |
+| Safeguard                  | Description                                         |
+| -------------------------- | --------------------------------------------------- |
+| Authorization Verification | On-chain verification of authorization validity     |
+| Amount Verification        | Verify min(authorization, balance) before execution |
+| Signature Verification     | Executor signature verification                     |
+| Deduplication Mechanism    | txHash + logIndex to prevent duplicates             |
 
 ## FAQ
 

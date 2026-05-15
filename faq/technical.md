@@ -1,14 +1,14 @@
-# Technical FAQ
+# Technical
 
 Frequently asked technical questions about API and integration.
 
 ## What is the API rate limit?
 
-| Rate Limit Dimension | Limit |
-| --------- | ---------- |
-| Per API Key | 1000 requests/minute |
-| Per IP | 2000 requests/minute |
-| Per Endpoint | 100 requests/minute |
+| Rate Limit Dimension | Limit                |
+| -------------------- | -------------------- |
+| Per API Key          | 1000 requests/minute |
+| Per IP               | 2000 requests/minute |
+| Per Endpoint         | 100 requests/minute  |
 
 [View rate limit details →](../integration/open-api/rate-limit.md)
 
@@ -16,31 +16,31 @@ Frequently asked technical questions about API and integration.
 
 {% stepper %}
 {% step %}
-### Check Configuration
+#### Check Configuration
 
 Confirm Webhook URL is correctly configured and publicly accessible.
 {% endstep %}
 
 {% step %}
-### Check Response
+#### Check Response
 
 Ensure your server returns HTTP 200.
 {% endstep %}
 
 {% step %}
-### Check Logs
+#### Check Logs
 
 Check server logs to confirm if requests arrived.
 {% endstep %}
 
 {% step %}
-### Verify Signature
+#### Verify Signature
 
 Confirm Webhook signature verification passes.
 {% endstep %}
 
 {% step %}
-### Contact Support
+#### Contact Support
 
 If problem persists, contact technical support.
 {% endstep %}
@@ -54,12 +54,12 @@ If problem persists, contact technical support.
 
 Common causes:
 
-| Cause | Solution |
-| ----- | -------------- |
-| Sorting error | Sort parameters in ASCII ascending order |
-| Timestamp error | Use millisecond timestamp |
-| Key error | Check Secret Key |
-| Encoding error | Use UTF-8 encoding |
+| Cause           | Solution                                 |
+| --------------- | ---------------------------------------- |
+| Sorting error   | Sort parameters in ASCII ascending order |
+| Timestamp error | Use millisecond timestamp                |
+| Key error       | Check Secret Key                         |
+| Encoding error  | Use UTF-8 encoding                       |
 
 [View signature generation examples →](../integration/open-api/authentication.md)
 
@@ -107,11 +107,11 @@ curl -X POST https://test-open.blockatm.net/order/api/v2/payout/order \
 
 ## What to do if blockchain network is congested?
 
-| Solution | Description |
-| ------ | ---------------------- |
-| Wait | Most congestion recovers within minutes |
-| Increase Gas | (Ethereum) Increase Gas Price |
-| Switch Network | Switch to TRON or Arbitrum |
+| Solution       | Description                             |
+| -------------- | --------------------------------------- |
+| Wait           | Most congestion recovers within minutes |
+| Increase Gas   | (Ethereum) Increase Gas Price           |
+| Switch Network | Switch to TRON or Arbitrum              |
 
 {% hint style="info" %}
 **Recommendation**: For time-sensitive businesses, recommend using TRON network with fast confirmation.

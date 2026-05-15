@@ -1,4 +1,4 @@
-# Collection FAQ
+# Collection
 
 Frequently asked questions about the collection (Safepay) function.
 
@@ -8,31 +8,29 @@ Frequently asked questions about the collection (Safepay) function.
 
 However, it is recommended to set a reasonable minimum amount because blockchain transfers have Gas fees, and small payments may not be cost-effective.
 
-| Network | Recommended Minimum |
-| -------- | ------ |
-| TRON | 1 USD |
-| Ethereum | 10 USD |
-| Arbitrum | 1 USD |
+| Network  | Recommended Minimum |
+| -------- | ------------------- |
+| TRON     | 1 USD               |
+| Ethereum | 10 USD              |
+| Arbitrum | 1 USD               |
 
 ## What to do if order fails?
 
 {% stepper %}
 {% step %}
-### Check Failure Reason
+#### Check Failure Reason
 
 Check order details in the admin dashboard to understand the failure reason.
 {% endstep %}
 
 {% step %}
-### Handle Exception Order
+#### Handle Exception Order
 
-**Payment Timeout**: User can initiate payment again
-**Amount Mismatch**: User needs to pay again with the correct order amount
-**On-chain Failure**: Check wallet authorization or network status
+**Payment Timeout**: User can initiate payment again **Amount Mismatch**: User needs to pay again with the correct order amount **On-chain Failure**: Check wallet authorization or network status
 {% endstep %}
 
 {% step %}
-### Re-initiate
+#### Re-initiate
 
 After handling the exception order, the original order number cannot be reused. A new order needs to be created.
 {% endstep %}
@@ -40,11 +38,11 @@ After handling the exception order, the original order number cannot be reused. 
 
 ## Which is better, TRC20 or ERC20?
 
-| Comparison | TRC20 | ERC20 |
-| --- | ---------- | ----------- |
-| Fees | Low (~1 TRX) | High ($0.1-$5) |
-| Speed | Fast (3 sec) | Slow (15-30 sec) |
-| Ecosystem | TRON ecosystem | Ethereum ecosystem |
+| Comparison | TRC20          | ERC20              |
+| ---------- | -------------- | ------------------ |
+| Fees       | Low (\~1 TRX)  | High ($0.1-$5)     |
+| Speed      | Fast (3 sec)   | Slow (15-30 sec)   |
+| Ecosystem  | TRON ecosystem | Ethereum ecosystem |
 
 **Recommendations**:
 
@@ -53,11 +51,11 @@ After handling the exception order, the original order number cannot be reused. 
 
 ## How long does it take for funds to arrive after user pays?
 
-| Network | Confirmation Time |
-| -------- | --------------- |
-| TRON | ~3 sec (1 confirmation) |
-| Ethereum | ~1 min (12 confirmations) |
-| Arbitrum | ~1-3 min (1 confirmation) |
+| Network  | Confirmation Time          |
+| -------- | -------------------------- |
+| TRON     | \~3 sec (1 confirmation)   |
+| Ethereum | \~1 min (12 confirmations) |
+| Arbitrum | \~1-3 min (1 confirmation) |
 
 {% hint style="info" %}
 **Arrival Standard**: Funds are considered arrived after blockchain confirmation. BlockATM will immediately update order status and send Webhook notification.
