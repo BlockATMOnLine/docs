@@ -84,7 +84,3 @@
 * [V2.1.0](changelog/v2.1.0.md)
 * [V2.2.0](changelog/v2.2.0.md)
 * [V2.3.0](changelog/v2.3.0.md)
-
-***
-
-* [BlockATM docs cn 首页README改写草案](blockatm-docs-cn-shou-ye-readme-gai-xie-cao-an.md)
