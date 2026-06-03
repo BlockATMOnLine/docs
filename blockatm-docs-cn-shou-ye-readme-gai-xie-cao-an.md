@@ -1,8 +1,4 @@
----
-hidden: true
----
-
-# README
+# BlockATM docs cn 首页README改写草案
 
 BlockATM 是面向企业的自托管 Web3 支付协议。它通过区块链智能合约帮助企业完成加密货币收款与批量付币，让企业在获得链上透明度和资金控制权的同时，享受清晰固定的费用规则，并减少对原生代币 GAS 的操作依赖。
 
@@ -27,7 +23,7 @@ BlockATM 是面向企业的自托管 Web3 支付协议。它通过区块链智�
 | **权限分离**        | 可按业务角色拆分收款、付币、签名、配置、赎回等操作权限，降低单点操作风险。              |
 | **多链支持**        | 支持 TRON、Ethereum、Arbitrum 等主流网络，覆盖常见稳定币支付场景。       |
 
-
+[查看自托管说明 →](/broken/pages/6fcf573eb7204f93776d7d38da9c50cdbd00a307)
 
 ## 产品服务
 
@@ -41,7 +37,7 @@ BlockATM 是面向企业的自托管 Web3 支付协议。它通过区块链智�
 * 平台需要为用户生成可追踪的支付订单
 * 企业希望收款资金不经过平台托管账户
 
-[了解收币产品 →](https://app.gitbook.com/s/XEfzS05BPO0tTODCeSnr/shou-bi)
+[了解收币产品 →](/broken/pages/1f28b14b15785592b0101b8fc846fba0f98b4350)
 
 ### 付币 Batch Payout
 
@@ -54,13 +50,18 @@ BlockATM 是面向企业的自托管 Web3 支付协议。它通过区块链智�
 * 合作方或供应商付款
 * 需要保留交易记录和付币审批路径的财务流程
 
-[了解付币产品 →](products/batch-payout/)
+[了解付币产品 →](/broken/pages/192f2bf2e7d159140c0c8f5d920fdbc42db5c810)
 
 ## 安全与控制模型
 
 BlockATM 的安全设计围绕一个原则：平台可以协调支付流程、统一费用体验并降低 GAS 操作门槛，但不应成为企业资金的托管方。
 
-<table><thead><tr><th width="160.0625">安全能力</th><th>说明</th><th>相关页面</th></tr></thead><tbody><tr><td>自托管</td><td>资金由企业控制的钱包和智能合约管理，关键操作依赖指定签名地址。</td><td><a href="security/self-custody.md">自托管说明</a></td></tr><tr><td>合约可审计</td><td>合约逻辑、资金流转和链上交易可被验证，降低黑盒风险。</td><td><a href="security/audit-report.md">合约审计</a></td></tr><tr><td>操作最佳实践</td><td>企业可通过钱包管理、权限拆分、网络确认和操作复核降低人为风险。</td><td><a href="security/best-practices.md">安全最佳实践</a></td></tr><tr><td>漏洞响应</td><td>安全问题可通过披露流程进入处理和跟踪。</td><td><a href="security/vulnerability-report.md">漏洞披露政策</a></td></tr></tbody></table>
+| 安全能力   | 说明                              | 相关页面                                                             |
+| ------ | ------------------------------- | ---------------------------------------------------------------- |
+| 自托管    | 资金由企业控制的钱包和智能合约管理，关键操作依赖指定签名地址。 | [自托管说明](/broken/pages/6fcf573eb7204f93776d7d38da9c50cdbd00a307)  |
+| 合约可审计  | 合约逻辑、资金流转和链上交易可被验证，降低黑盒风险。      | [合约审计](/broken/pages/197697422e0b9e49a76b00acbc02392472d06363)   |
+| 操作最佳实践 | 企业可通过钱包管理、权限拆分、网络确认和操作复核降低人为风险。 | [安全最佳实践](/broken/pages/3aa8e8f728b4c8e3e130cecd4d5581d8c8bf11be) |
+| 漏洞响应   | 安全问题可通过披露流程进入处理和跟踪。             | [漏洞披露政策](/broken/pages/d4be663ca0f1b99357d8f31a89fe45216530c951) |
 
 ## 如何开始
 
@@ -72,13 +73,13 @@ BlockATM 的安全设计围绕一个原则：平台可以协调支付流程、�
 4. 选择 Widget SDK、Open API 或 Webhook 进行接入。
 5. 按安全最佳实践配置企业钱包和操作权限。
 
-| 阅读目标            | 推荐页面                                                                        |
-| --------------- | --------------------------------------------------------------------------- |
-| 了解 BlockATM 是什么 | [概述](blockatm/what-is-blockatm.md)                                          |
-| 理解基础概念          | [核心概念](blockatm/core-concepts.md)                                           |
-| 快速体验流程          | [快速开始](blockatm/quickstart.md)                                              |
-| 查看支持网络          | [支持的网络](https://app.gitbook.com/s/XEfzS05BPO0tTODCeSnr/zhi-chi-de-wang-luo) |
-| 配置钱包            | [钱包教程](zhi-chi-de-wang-luo/qian-bao-jiao-cheng/)                            |
+| 阅读目标            | 推荐页面                                                            |
+| --------------- | --------------------------------------------------------------- |
+| 了解 BlockATM 是什么 | [概述](/broken/pages/2e53550be3b770ef3579324cc4a3bb3900b04b3c)    |
+| 理解基础概念          | [核心概念](/broken/pages/351a98f517bc60126d5d9228d2d94840b0c496b8)  |
+| 快速体验流程          | [快速开始](/broken/pages/3aa1ad6dc3bca83dd9b77e262b243c43ee3b24ea)  |
+| 查看支持网络          | [支持的网络](/broken/pages/da3ac573474e2b4b75261bf629f547bea2340b5f) |
+| 配置钱包            | [钱包教程](/broken/pages/d83464ce827685a8e67db4416525923ff27862c0)  |
 
 ## 快速接入
 
@@ -88,9 +89,9 @@ BlockATM 的安全设计围绕一个原则：平台可以协调支付流程、�
 | **Open API**   | 深度定制业务流程，适合已有支付、订单或财务系统的团队。    | 约 2-4 小时 |
 | **Webhook**    | 接收支付、付币和订单事件，适合需要自动对账和状态同步的系统。 | 约 1 小时   |
 
-[查看 Widget SDK →](https://app.gitbook.com/s/XEfzS05BPO0tTODCeSnr/widget-sdk)\
-[查看 Open API →](https://app.gitbook.com/s/XEfzS05BPO0tTODCeSnr/open-api)\
-[查看 Webhook →](https://app.gitbook.com/s/XEfzS05BPO0tTODCeSnr/webhook)
+[查看 Widget SDK →](/broken/pages/e2e0bd7436005bbc49ea8bd0b0072239ab743661)\
+[查看 Open API →](/broken/pages/6f71a4dd3440a69890fcee6c24d99f7780c4a730)\
+[查看 Webhook →](/broken/pages/e8800608de4dfa053cb89b50f5d2ecb30397520f)
 
 ## 费用说明
 
@@ -101,7 +102,7 @@ BlockATM 的安全设计围绕一个原则：平台可以协调支付流程、�
 | 收币（扫描支付） | 0.4%/笔    |
 | 付币       | 1 USD/笔   |
 
-
+[查看详细费用 →](/broken/pages/6c1c82d4da5672f5105ea2663901cf6531352e5b)
 
 ## 角色分工
 
@@ -119,15 +120,15 @@ BlockATM 的安全设计围绕一个原则：平台可以协调支付流程、�
 | V2.2.0 | 2025-10-15 | 支持 Ethereum/Tron 提现 |
 | V2.1.0 | 2025-06-10 | 初始版本                |
 
-[查看完整更新日志 →](https://app.gitbook.com/s/XEfzS05BPO0tTODCeSnr/geng-xin-ri-zhi)
+[查看完整更新日志 →](/broken/pages/4ce7a22849f572de0f1295d5c5e2ac50533c6f30)
 
 ***
 
 ## 需要帮助？
 
-* Telegram：@Passto\_john
+* Telegram：Passto\_john
 * 邮箱：[john.feng@chixi88.com](mailto:john.feng@chixi88.com)
-* [常见问题](https://app.gitbook.com/s/XEfzS05BPO0tTODCeSnr/chang-jian-wen-ti)
-* [收款集成指南](faq/collect.md)
-* [付币集成指南](faq/payout.md)
+* [常见问题](/broken/pages/65379ea9637d229e39580cd7a71bac287ff79f64)
+* [收款集成指南](/broken/pages/117a7490401bad26be83ad201d33c2e79cc1eaa1)
+* [付币集成指南](/broken/pages/dd89b5572b881dd5fba5d87df66e17f1479db3ac)
 
