@@ -57,27 +57,7 @@ BlockATM 支持主流区块链网络，覆盖常见稳定币收付款场景：
 
 ## 系统架构
 
-```mermaid
-%%{
-  init: {
-    'theme': 'neutral',
-    'themeVariables': {
-      'primaryColor': '#6366F1',
-      'lineColor': '#94A3B8'
-    }
-  }
-}%%
-graph LR
-    A["👤 用户"] -->|"① 发起支付"| B["🏪 BlockATM<br/>收银台"]
-    B -->|"② 链上执行"| C["⛓️ 区块链"]
-    C -->|"③ 事件通知"| B
-    B -->|"④ Webhook"| D["📱 商户系统"]
-
-    style A fill:#EEF2FF,stroke:#6366F1,color:#4338CA
-    style B fill:#FEF3C7,stroke:#F59E0B,color:#92400E
-    style C fill:#DBEAFE,stroke:#3B82F6,color:#1E40AF
-    style D fill:#D1FAE5,stroke:#10B981,color:#065F46
-```
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 在 BlockATM 的支付流程中，用户、BlockATM 收银台、区块链和商户系统共同完成一次支付：
 
@@ -89,20 +69,7 @@ graph LR
 
 ## 资金流向
 
-```mermaid
-%%{
-  init: { 'theme': 'neutral' }
-}%%
-graph LR
-    A["👤 用户钱包"] -->|"① 转账到合约"| B["📦 智能合约"]
-    B -->|"② 保管资产"| C["💎 合约余额"]
-    C -->|"③ 按需提取"| D["🏦 商户钱包"]
-
-    style A fill:#EEF2FF,stroke:#6366F1,color:#4338CA
-    style B fill:#FEF3C7,stroke:#F59E0B,color:#92400E
-    style C fill:#DBEAFE,stroke:#3B82F6,color:#1E40AF
-    style D fill:#D1FAE5,stroke:#10B981,color:#065F46
-```
+<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 BlockATM 的资金流向可以理解为三个阶段：
 
@@ -117,30 +84,7 @@ BlockATM 的资金流向可以理解为三个阶段：
 
 ## 支付流程
 
-```mermaid
-%%{
-  init: {
-    'theme': 'neutral',
-    'themeVariables': {
-      'primaryColor': '#6366F1',
-      'primaryTextColor': '#1E293B'
-    }
-  }
-}%%
-stateDiagram-v2
-    [*] --> 待支付: 商户创建订单
-    待支付 --> 已支付: 用户完成转账
-    待支付 --> 已取消: 用户主动取消
-    待支付 --> 已过期: 超时未支付
-    已支付 --> [*]: 流程结束
-    已取消 --> [*]: 流程结束
-    已过期 --> [*]: 流程结束
-
-    note right of 已支付
-        资金已到账合约
-        Webhook 通知商户
-    end note
-```
+<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 一次收款通常会经历以下状态：
 
@@ -150,7 +94,7 @@ stateDiagram-v2
 
 ## 适用场景
 
-<table><thead><tr><th width="140.125">场景</th><th width="201.1875">适合团队</th><th>价值</th></tr></thead><tbody><tr><td>电商收款</td><td>运营、财务</td><td>接受稳定币付款，减少托管型收款带来的资金控制问题。</td></tr><tr><td>批量付币</td><td>财务、管理员</td><td>向用户、合作方或供应商批量付款，并保留交易记录。</td></tr><tr><td>资金归集</td><td>财务、管理员</td><td>将多笔用户付款归集到企业可管理的钱包和合约体系中。</td></tr><tr><td>DApp 集成</td><td>管理员、技术协作方</td><td>在现有产品中接入加密货币支付能力。</td></tr></tbody></table>
+<table><thead><tr><th width="140.125">场景</th><th>价值</th></tr></thead><tbody><tr><td>电商收款</td><td>接受稳定币付款，减少托管型收款带来的资金控制问题。</td></tr><tr><td>批量付币</td><td>向用户、合作方或供应商批量付款，并保留交易记录。</td></tr><tr><td>资金归集</td><td>将多笔用户付款归集到企业可管理的钱包和合约体系中。</td></tr><tr><td>DApp 集成</td><td>在现有产品中接入加密货币支付能力。</td></tr></tbody></table>
 
 {% hint style="info" %}
 **不需要 KYB/KYC**：BlockATM 是去中心化应用，企业无需向任何机构提交身份证明材料。
