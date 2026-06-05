@@ -57,6 +57,8 @@ BlockATM 支持主流区块链网络，覆盖常见稳定币收付款场景：
 
 ## 系统架构
 
+<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 在 BlockATM 的支付流程中，用户、BlockATM 收银台、区块链和商户系统共同完成一次支付：

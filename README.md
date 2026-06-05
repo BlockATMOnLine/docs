@@ -125,8 +125,8 @@ BlockATM 的安全设计围绕一个原则：平台可以协调支付流程、�
 
 ## 需要帮助？
 
-* Telegram：@Passto\_john
-* 邮箱：[john.feng@chixi88.com](mailto:john.feng@chixi88.com)
+
+
 * [常见问题](https://app.gitbook.com/s/XEfzS05BPO0tTODCeSnr/chang-jian-wen-ti)
 * [收款集成指南](faq/collect.md)
 * [付币集成指南](faq/payout.md)
