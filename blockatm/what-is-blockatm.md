@@ -110,3 +110,9 @@ BlockATM 的资金流向可以理解为三个阶段：
 * [安全最佳实践](../security/best-practices.md)：配置企业钱包、权限和复核流程。
 
 <br>
+
+## 需要帮助？
+
+* Telegram：[https://t.me/blockatm2023](https://t.me/blockatm2023)
+* 邮箱：support@blockatm
+
