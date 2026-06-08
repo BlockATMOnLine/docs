@@ -406,8 +406,8 @@ const API_KEY = 'pck_xxxxxx';    // 替换为您的 API Key
 
 ## 需要帮助？
 
-* 💬 Telegram：Passto\_john
-* 📧 邮箱：john.feng@chixi88.com
+* 💬 Telegram：[https://t.me/blockatm2023](https://t.me/blockatm2023)
+* 📧 邮箱：support@blockatm
 * 📖 [常见问题](../faq/)
 
 {% hint style="success" %}
