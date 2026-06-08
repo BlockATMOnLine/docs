@@ -48,11 +48,11 @@ Choose a wallet to create:
 
 Get test tokens based on your chosen network:
 
-| Network | How to Get Test Tokens |
+| Network          | How to Get Test Tokens                                         |
 | ---------------- | -------------------------------------------------------------- |
 | Ethereum Sepolia | [faucets.chainlinklabs.com](https://faucets.chainlinklabs.com) |
-| Arbitrum Sepolia | [faucets.chain.link](https://faucets.chain.link) |
-| TRON Nile | [nileex.io](https://nileex.io/join/getJoinPage) |
+| Arbitrum Sepolia | [faucets.chain.link](https://faucets.chain.link)               |
+| TRON Nile        | [nileex.io](https://nileex.io/join/getJoinPage)                |
 
 ### 3. Register BlockATM Account
 
@@ -86,10 +86,10 @@ Visit and login:
 
 Select **Web3 Collection Contract** (suitable for beginners):
 
-| Type | Description | Fee |
-| -------- | -------- | ------- |
+| Type            | Description                 | Fee               |
+| --------------- | --------------------------- | ----------------- |
 | Web3 Collection | User connects wallet to pay | 2 USD/transaction |
-| Scan2Pay | User scans QR code to pay | 0.4%/transaction |
+| Scan2Pay        | User scans QR code to pay   | 0.4%/transaction  |
 
 ### 1.4 Configure Contract Address
 
@@ -119,7 +119,7 @@ Fill in the following information:
 
 1. Confirm configuration information
 2. Pay 200 USD contract creation fee
-3. Wait for contract deployment (~1-2 minutes)
+3. Wait for contract deployment (\~1-2 minutes)
 4. After successful deployment, record the contract ID
 
 ***
@@ -286,7 +286,7 @@ const API_KEY = 'pck_xxxxxx';    // Replace with your API Key
 ### 3.3 Open in Browser
 
 1. Double-click the HTML file to open in browser
-2. Or use a local server:
+2.  Or use a local server:
 
     ```bash
     # Using Python
@@ -405,9 +405,10 @@ After successful integration, you can:
 
 ## Need Help?
 
-* 💬 Telegram: Passto_john
-* 📧 Email: john.feng@chixi88.com
+* 💬 Telegram: [https://t.me/blockatm2023](https://t.me/blockatm2023)
+* 📧 Email: support@blockatm
 * 📖 [FAQ](../faq/)
+* 🔧 [Integration Guide](../integration/guides/collect-guide.md)
 
 {% hint style="success" %}
 **Congratulations!** You have completed BlockATM's first integration. Continue exploring more features!
