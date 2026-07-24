@@ -37,8 +37,8 @@ graph LR
 
 **推荐新手**：
 
-* [创建 MetaMask 钱包](../wallets/metamask/create-wallet.md)（5 分钟）- 支持 Ethereum/Arbitrum
-* [创建 TronLink 钱包](../wallets/tronlink/create-wallet.md)（3 分钟）- 支持 TRON
+* [创建 MetaMask 钱包](https://github.com/BlockATMOnLine/docs/blob/main_cn/wallets/metamask/create-wallet.md)（5 分钟）- 支持 Ethereum/Arbitrum
+* [创建 TronLink 钱包](https://github.com/BlockATMOnLine/docs/blob/main_cn/wallets/tronlink/create-wallet.md)（3 分钟）- 支持 TRON
 
 {% hint style="warning" %}
 **重要**：务必备份好助记词！助记词丢失 = 资产丢失，BlockATM 无法帮您恢复。
@@ -56,7 +56,7 @@ graph LR
 
 ### 3. 注册 BlockATM 账号
 
-1. 访问 [BlockATM 测试环境](https://backstage-b2b-pre.ufcfan.org)
+1. 访问 [BlockATM 测试环境](https://test-app.blockatm.net/)
 2. 点击"连接钱包"
 3. 选择网络并选择对应的钱包插件
 4. 唤醒钱包并签名，完成登陆
@@ -73,7 +73,7 @@ graph LR
 
 访问并登录：
 
-* 测试环境：https://backstage-b2b-pre.ufcfan.org
+* 测试环境：[https://test-app.blockatm.net/](https://test-app.blockatm.net/)
 * 生产环境：https://app.blockatm.net
 
 ### 1.2 进入收币合约管理
@@ -386,9 +386,9 @@ const API_KEY = 'pck_xxxxxx';    // 替换为您的 API Key
 
 ### 深入学习
 
-* [收币完整集成指南](../getting-started/guides/collect-guide.md) - 详细集成流程
-* [Open API 文档](../getting-started/open-api/) - 后端集成
-* [Webhook 配置](../getting-started/webhooks/) - 接收支付通知
+* [收币完整集成指南](https://github.com/BlockATMOnLine/docs/blob/main_cn/getting-started/guides/collect-guide.md) - 详细集成流程
+* [Open API 文档](https://github.com/BlockATMOnLine/docs/blob/main_cn/getting-started/open-api/README.md) - 后端集成
+* [Webhook 配置](https://github.com/BlockATMOnLine/docs/blob/main_cn/getting-started/webhooks/README.md) - 接收支付通知
 
 ### 生产环境部署
 
@@ -399,8 +399,8 @@ const API_KEY = 'pck_xxxxxx';    // 替换为您的 API Key
 
 ### 高级功能
 
-* [付币功能](../getting-started/guides/payout-guide.md) - 批量支付
-* [异常处理](../getting-started/guides/exception-handling.md) - 处理失败订单
+* [付币功能](https://github.com/BlockATMOnLine/docs/blob/main_cn/getting-started/guides/payout-guide.md) - 批量支付
+* [异常处理](https://github.com/BlockATMOnLine/docs/blob/main_cn/getting-started/guides/exception-handling.md) - 处理失败订单
 
 ***
 
