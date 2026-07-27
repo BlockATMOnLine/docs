@@ -60,7 +60,10 @@ await tokenContract.methods.approve(
 
 1. 在管理后台「付币合约」中找到接入的合约
 2. 点击「应用」按钮
-3. 点击「创建订单」，在弹出下拉中选择「」pi&#x20;
+3. 点击「创建订单」，在弹出下拉中选择「api创建订单」
+4. 查看对接信息&#x20;
+
+[查看付币 API 详细文档 →](../open-api/payout-api.md)
 
 ### 创建付币订单
 
@@ -87,8 +90,6 @@ POST /order/api/v2/payout/order
 4. 点击「上传订单」上传 Excel 文件
 5. 检查上传结果（超额度会标红提示）
 6. 确认无误后点击「提交付币请求」
-
-[查看付币 API 详细文档 →](../open-api/payout-api.md)
 
 ## 步骤 4：确认并执行付币
 
