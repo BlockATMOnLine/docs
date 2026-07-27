@@ -56,7 +56,9 @@ await tokenContract.methods.approve(
 ).send({ from: USER_ADDRESS });
 ```
 
-## 步骤 3：接入 API
+## 步骤 3：创建付币订单
+
+**API 方式创建：**
 
 1. 在管理后台「付币合约」中找到接入的合约
 2. 点击「应用」按钮
@@ -64,10 +66,6 @@ await tokenContract.methods.approve(
 4. 查看对接信息&#x20;
 
 [查看付币 API 详细文档 →](../open-api/payout-api.md)
-
-### 创建付币订单
-
-**API 方式上传：**
 
 ```json
 POST /order/api/v2/payout/order
@@ -82,7 +80,7 @@ POST /order/api/v2/payout/order
 }
 ```
 
-**Excel 方式上传：**
+**Excel 方式创建：**
 
 1. 在付币弹窗中切换到「Excel」标签
 2. 点击「下载订单模板」
@@ -93,7 +91,7 @@ POST /order/api/v2/payout/order
 
 ## 步骤 4：确认并执行付币
 
-### API 订单执行
+### 订单执行
 
 1. 连接「签名地址」钱包（可在「资产」→「付币合约」中找到「付币」按钮）
 2. 点击「付币」，打开付币弹窗（默认显示 API 上传的订单）
