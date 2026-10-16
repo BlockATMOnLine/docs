@@ -90,8 +90,8 @@ Scan2Pay 要求用户支付的金额与订单金额完全一致。
 2. 进入「收币」→「订单列表」
 3. 可按时间、状态、订单号等筛选
 
-或通过 API 查询：
+或通过 API 查询订单详情：
 
 ```
-GET /order/api/v2/payorder/list
+GET /order/api/v2/payorder/detail
 ```
