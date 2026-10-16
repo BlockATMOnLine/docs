@@ -90,8 +90,8 @@ Scan2Pay requires the user to pay exactly the same amount as the order amount.
 2. Go to "Collection" → "Order List"
 3. Filter by time, status, order number, etc.
 
-Or query via API:
+Or query order details via API:
 
 ```
-GET /order/api/v2/payorder/list
+GET /order/api/v2/payorder/detail
 ```

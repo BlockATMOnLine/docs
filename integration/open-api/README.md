@@ -1,12 +1,12 @@
-# Open API
+# Overview
 
 BlockATM Open API provides complete payment interfaces, supporting collection, payout, order queries and more.
 
 ## Features
 
-- ✅ **Complete Functions**: Covers collection, payout, configuration, and all query scenarios
-- ✅ **Secure Signing**: HMAC-SHA256 request signature
-- ✅ **Webhook Support**: Real-time payment event notifications
+* ✅ **Complete Functions**: Covers collection, payout, configuration, and all query scenarios
+* ✅ **Secure Signing**: HMAC-SHA256 request signature
+* ✅ **Webhook Support**: Real-time payment event notifications
 
 ## API Architecture
 
@@ -51,33 +51,32 @@ graph TB
 
 ## API Environment
 
-| Environment | Base URL |
-|------|----------|
-| Production | `https://open.blockatm.net` |
-| Test | `https://test-open.blockatm.net` |
+| Environment | Base URL                         |
+| ----------- | -------------------------------- |
+| Production  | `https://open.blockatm.net`      |
+| Test        | `https://test-open.blockatm.net` |
 
 ## API Categories
 
 ### Config APIs
 
-| API | Method | Description |
-|------|------|------|
-| `GET /admin/api/v2/pub/allNetworks` | Get supported network list |
-| `GET /admin/api/v2/pub/cashier/info` | Get cashier configuration info |
+| API                                  | Method                         | Description |
+| ------------------------------------ | ------------------------------ | ----------- |
+| `GET /admin/api/v2/pub/allNetworks`  | Get supported network list     |             |
+| `GET /admin/api/v2/pub/cashier/info` | Get cashier configuration info |             |
 
 ### Collection APIs
 
-| API | Method | Description |
-|------|------|------|
-| `GET /order/api/v2/payorder/list` | Query collection order list |
-| `GET /order/api/v2/payorder/detail` | Query collection order details |
+| API                                 | Method                         | Description |
+| ----------------------------------- | ------------------------------ | ----------- |
+| `GET /order/api/v2/payorder/detail` | Query collection order details |             |
 
 ### Payout APIs
 
-| API | Method | Description |
-|------|------|------|
-| `POST /order/api/v2/payout/order` | Create payout order (requires signature) |
-| `GET /order/api/v2/payout/detail` | Query payout order details |
+| API                               | Method                                   | Description |
+| --------------------------------- | ---------------------------------------- | ----------- |
+| `POST /order/api/v2/payout/order` | Create payout order (requires signature) |             |
+| `GET /order/api/v2/payout/detail` | Query payout order details               |             |
 
 ## Quick Start
 
@@ -88,9 +87,8 @@ graph TB
 
 ## Fee Description
 
-| Service | Fee |
-|------|------|
-| Create collection order | Free |
-| Create payout order | Free |
-| Collection success | 2 USD or 0.4% |
-| Payout success | 1 USD |
+| Service             | Fee           |
+| ------------------- | ------------- |
+| Create payout order | Free          |
+| Collection success  | 2 USD or 0.4% |
+| Payout success      | 1 USD         |
